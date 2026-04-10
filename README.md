@@ -17,3 +17,6 @@ Software needed: ROS2 Humble, Go2 SDK, Python, state estimation and logging tool
 Research needed: Quadruped stair climbing, trunk stabilization in legged robots, locomotion over structured terrain, safety procedures for real-robot stair experiments
 Deliverables: Go2 stair locomotion pipeline, trunk stabilization controller, experimental evaluation report, demo videos
 
+# Starting repos:
+- https://github.com/Unitree-Go2-Robot/go2_robot for additional interfaces, visualization, and SLAM/Nav2 integration
+- https://github.com/unitreerobotics/unitree_ros2 for official SDK with direct DDS communication, low-level control, and sport mode
