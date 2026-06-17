@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robot_interfaces/srv/UpdateSingleParam.srv
+// generated code does not contain a copyright notice
+
+
+module robot_interfaces {
+  module srv {
+    struct UpdateSingleParam_Request {
+      string param_name;
+
+      float value;
+    };
+    struct UpdateSingleParam_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

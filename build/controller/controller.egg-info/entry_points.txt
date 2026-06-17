@@ -1,0 +1,6 @@
+[console_scripts]
+controller_node = controller.convex_mpc_controller:main
+rl_controller = controller.rl_controller:main
+
+[ros2.components]
+MPCControllerNode = controller.convex_mpc_controller:MPCControllerNode

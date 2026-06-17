@@ -1,0 +1,4 @@
+float32 frequency_hz
+float32 duty_cycle
+float32 height_swing
+float32[] phase_offset

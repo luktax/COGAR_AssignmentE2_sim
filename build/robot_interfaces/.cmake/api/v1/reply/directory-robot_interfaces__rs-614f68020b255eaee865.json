@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robot_interfaces__rs",
+		"source" : "/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces/robot_interfaces__rs"
+	}
+}

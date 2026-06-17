@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from robot_interfaces/srv/UpdateGaitParams.srv
+// generated code does not contain a copyright notice
+
+
+module robot_interfaces {
+  module srv {
+    struct UpdateGaitParams_Request {
+      float frequency_hz;
+
+      float duty_cycle;
+
+      float height_swing;
+
+      sequence<float> phase_offset;
+    };
+    struct UpdateGaitParams_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

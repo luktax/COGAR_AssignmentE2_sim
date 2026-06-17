@@ -1,0 +1,9 @@
+{
+  "package_name": "robot_interfaces",
+  "non_idl_tuples": [
+    "/home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces:msg/RobotState.msg",
+    "/home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces:srv/UpdateGaitParams.srv",
+    "/home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces:srv/UpdateSingleParam.srv",
+    "/home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces:srv/SetBodyHeight.srv"
+  ]
+}

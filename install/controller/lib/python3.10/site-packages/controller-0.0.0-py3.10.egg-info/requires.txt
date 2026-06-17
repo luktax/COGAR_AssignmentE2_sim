@@ -1,0 +1,7 @@
+setuptools
+torch>=2.0.0
+numpy
+pyyaml
+
+[test]
+pytest
