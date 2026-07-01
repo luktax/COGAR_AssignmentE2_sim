@@ -3,3 +3,4 @@ simulation_node = simulation_py.simulation_node:main
 
 [ros2.components]
 SimulationNode = simulation_py.simulation_node:SimulationNode
+

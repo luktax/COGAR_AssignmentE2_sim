@@ -1,0 +1,18 @@
+[3.628s] Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc': CONDA_PROMPT_MODIFIER=(go2-convex-mpc) PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build --no-deps symlink_data --force
+[4.474s] running develop
+[4.895s] running egg_info
+[4.895s] writing convex_mpc.egg-info/PKG-INFO
+[4.899s] writing dependency_links to convex_mpc.egg-info/dependency_links.txt
+[4.900s] writing entry points to convex_mpc.egg-info/entry_points.txt
+[4.901s] writing requirements to convex_mpc.egg-info/requires.txt
+[4.902s] writing top-level names to convex_mpc.egg-info/top_level.txt
+[4.906s] reading manifest file 'convex_mpc.egg-info/SOURCES.txt'
+[4.909s] writing manifest file 'convex_mpc.egg-info/SOURCES.txt'
+[4.912s] running build_ext
+[4.913s] Creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex-mpc.egg-link (link to .)
+[4.914s] 
+[4.915s] Installed /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc
+[4.915s] running symlink_data
+[4.915s] symbolically linking /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/resource/convex_mpc -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/ament_index/resource_index/packages
+[4.917s] symbolically linking /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/package.xml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc
+[4.995s] Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc' returned '0': CONDA_PROMPT_MODIFIER=(go2-convex-mpc) PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build --no-deps symlink_data --force

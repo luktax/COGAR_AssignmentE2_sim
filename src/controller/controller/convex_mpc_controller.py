@@ -1,20 +1,22 @@
-import rclpy
-from rclpy.node import Node
-import numpy as np
+import time
 from threading import Lock
 
-from std_msgs.msg import Float64MultiArray
+import numpy as np
+import rclpy
 from geometry_msgs.msg import Twist
+from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
+from rclpy.executors import MultiThreadedExecutor
+from rclpy.node import Node
+from std_msgs.msg import Float64MultiArray
+
 from robot_interfaces.msg import RobotState
-from robot_interfaces.srv import UpdateGaitParams, UpdateSingleParam, SetBodyHeight
+from robot_interfaces.srv import SetBodyHeight, UpdateGaitParams, UpdateSingleParam
 
-import sys
-
-from convex_mpc.go2_robot_data import PinGo2Model
-from convex_mpc.com_trajectory import ComTraj
 from convex_mpc.centroidal_mpc import CentroidalMPC
-from convex_mpc.leg_controller import LegController
+from convex_mpc.com_trajectory import ComTraj
 from convex_mpc.gait import Gait
+from convex_mpc.go2_robot_data import PinGo2Model
+from convex_mpc.leg_controller import LegController
 
 # Go2 Joint Torque Limit
 HIP_LIM = 23.7
@@ -29,12 +31,15 @@ TAU_LIM = SAFETY * np.array([
     HIP_LIM, ABD_LIM, KNEE_LIM,   # RR
 ])
 
+SIM_REALTIME_FACTOR = 0.2
+
 class MPCControllerNode(Node):
     def __init__(self):
         super().__init__('mpc_controller_node')
         self.get_logger().info("MPC Controller Node started.")
 
         self.state_lock = Lock()
+        self.mpc_lock = Lock()
         self.state_age_max_s = 0.1
 
         # PUBLISHERS/SUBSCRIBERS
@@ -42,7 +47,10 @@ class MPCControllerNode(Node):
         self.sub = self.create_subscription(Twist, '/cmd_vel', self.cmd_vel_callback, 10)
         
         # subscription for robot state (published by simulation/real robot interface)
-        self.state_sub = self.create_subscription(RobotState, '/robot_state', self.state_callback, 10)
+        self.state_cb = MutuallyExclusiveCallbackGroup()
+        self.mpc_cb = MutuallyExclusiveCallbackGroup()
+
+        self.state_sub = self.create_subscription(RobotState, '/robot_state', self.state_callback, 10, callback_group=self.state_cb)
 
         # SERVICES
         self.update_all_srv = self.create_service(UpdateGaitParams, '/update_gait_params', self.update_gait_params_callback)
@@ -56,29 +64,35 @@ class MPCControllerNode(Node):
         self.last_state_time_wall = 0.0
 
         # variable settings
-        self.height_swing = 0.1
+        self.height_swing = 0
         self.phase_offset = np.array([0.5, 0.0, 0.0, 0.5]).reshape(4)
-        self.gait_hz = 3.0 #3.0
-        self.gait_duty = 0.6 #0.6
+        self.gait_hz = 1.5 # 3.0
+        self.gait_duty = 0.6 # 0.6
 
         self.gait_t = 1.0 / self.gait_hz
         self.mpc_dt = self.gait_t / 16.0
+        self.mpc_timer_period = self.mpc_dt / SIM_REALTIME_FACTOR
 
         self.ctrl_hz = 100.0
         self.ctrl_dt = 1.0 / self.ctrl_hz
-        self.timer = self.create_timer(self.ctrl_dt, self.control_loop_callback)
+
+        # TIMER (ONE FAST - ONE SLOW)
+        self.mpc_timer = self.create_timer(self.mpc_timer_period, self.mpc_loop, callback_group=self.mpc_cb)
 
         self.mpc_update_interval = max(1, int(self.ctrl_hz * self.mpc_dt))
 
         # stair parameters for pitch reference
-        self.stair_height = 0.10
+        self.stair_height = 0.0
         self.stair_depth = 0.50
         self.pitch_ref = self.compute_pitch(self.stair_height, self.stair_depth)
 
         # Initialize robot model, gait, trajectory generator, MPC, and leg controller
-        self.go2 = PinGo2Model()
+        self.go2 = PinGo2Model() # FAST loop
+        self.go2_mpc = PinGo2Model() # MPC loop
+
         self.gait = Gait(self.gait_hz, self.gait_duty, self.height_swing, self.phase_offset)
-        self.traj = ComTraj(self.go2)
+        self.traj = ComTraj(self.go2_mpc)
+
         self.mpc = None
         self.leg_controller = LegController()
         self.last_tau = np.zeros(12)
@@ -100,6 +114,14 @@ class MPCControllerNode(Node):
         self.debug_counter = 0
         self.mpc_counter = 0
         self.state_latency_log = []
+        self._last_loop_wall = 0
+        self._loop_dt_log = []
+        self.last_sim_time = 0
+
+        #
+        self.last_grf = None
+        self.last_des = None
+        self.last_contact = None
 
     #  ========= SERVICES CALLBACKS ==========
 
@@ -216,7 +238,10 @@ class MPCControllerNode(Node):
         
         self.gait_t = 1.0 / self.gait_hz
         self.mpc_dt = self.gait_t / 16.0
-        self.mpc_update_interval = max(1, int(self.ctrl_hz * self.mpc_dt))
+        self.mpc_timer_period = self.mpc_dt / SIM_REALTIME_FACTOR
+
+        self.mpc_timer.cancel()
+        self.mpc_timer = self.create_timer(self.mpc_timer_period, self.mpc_loop, callback_group=self.mpc_cb)
 
         self.gait = Gait(self.gait_hz, self.gait_duty, self.height_swing, self.phase_offset)
         self.mpc_needs_reset = True
@@ -229,110 +254,180 @@ class MPCControllerNode(Node):
         if self.debug_counter % 100 == 0:  # Print every 100 timer callbacks
             self.get_logger().info(f"Received cmd_vel: linear_x={self.x_vel_des}, linear_y={self.y_vel_des}, angular_z={self.yaw_rate_des}")
 
-    # ========= CONTROL LOOP ==========
-    def control_loop_callback(self):
+    def mpc_loop(self):
+        wall = self.get_clock().now().nanoseconds*1e-9
+
+        t0 = time.thread_time()
         with self.state_lock:
             if self.q is None or self.dq is None:
                 return
-            
-            # check latency of state
-            state_age = self.last_state_time_wall - self.get_clock().now().nanoseconds * 1e-9
-            if abs(state_age) > self.state_age_max_s:
-                if self.debug_counter % 50 == 0:
-                        self.get_logger().warn(
-                            f"State too old: {abs(state_age)*1000:.1f}ms (threshold: "
-                            f"{self.state_age_max_s*1000:.1f}ms)"
-                        )
-                return
-            # Get state when is not too old
-            q_local = self.q.copy()
-            dq_local = self.dq.copy()
-            time_now = self.last_time
+            q = self.q.copy()
+            dq = self.dq.copy()
+            t = self.last_time
+        
+        #self.get_logger().info(
+        #    f"[MPC START]"
+        #    f" sim_time={t:.4f}"
+        #    f" wall={wall:.4f}"
+        #)
 
-            if len(self.state_latency_log) >= 100:
-                self.state_latency_log.pop(0)
-            self.state_latency_log.append(abs(state_age))
-
-        # Update robot model with current state
-        self.go2.update_model(q_local, dq_local)
-
-        # 
-        if self.debug_counter % 100 == 0:  # Print every 100 timer callbacks
-            x = self.go2.compute_com_x_vec()
-            avg_latency = np.mean(self.state_latency_log) * 1000
-            self.get_logger().info(f"COM = {x[0,0]:.3f}, {x[1,0]:.3f}, {x[2,0]:.3f} | State latency: {avg_latency:.1f}ms")
-
-        # RESET if params changed
+        # reset logic
         if self.mpc_needs_reset:
-            self.get_logger().info("🔄 Reinitializing MPC with new parameters...")
-            self.mpc_initialized = False  # Forza reinizializzazione
+            self.mpc_initialized = False
             self.mpc_needs_reset = False
             return
+        
+        self.go2_mpc.update_model(q, dq)
+        t1 = time.thread_time()
 
-        # Initialize MPC on the first callback after receiving state
+        # init MPC
         if not self.mpc_initialized:
-            self.traj.generate_traj(self.go2, self.gait, time_now, self.x_vel_des, self.y_vel_des, self.z_pos_des, self.yaw_rate_des, self.pitch_ref, self.mpc_dt)
-            self.mpc = CentroidalMPC(self.go2, self.traj)
+            self.traj.generate_traj(self.go2_mpc, self.gait, t, self.x_vel_des, self.y_vel_des, self.z_pos_des, self.yaw_rate_des, self.pitch_ref, self.mpc_dt)
+            self.mpc = CentroidalMPC(self.go2_mpc, self.traj)
             self.mpc_initialized = True
-            self.get_logger().info(f"MPC initialized with horizon N={self.traj.N}.")
+            return
+        
+        # trajectory update
+        self.traj.generate_traj(self.go2_mpc, self.gait, t, self.x_vel_des, self.y_vel_des, self.z_pos_des, self.yaw_rate_des, self.pitch_ref, self.mpc_dt)
+        
+        t2 = time.thread_time()
+
+        # solve MPC
+        sol = self.mpc.solve_QP(self.go2_mpc, self.traj, False)
+        t3 = time.thread_time()
+
+        if sol is None:
             return
 
-        # Run MPC 
-        if self.mpc_counter % self.mpc_update_interval == 0:
-            self.traj.generate_traj(self.go2, self.gait, time_now, self.x_vel_des, self.y_vel_des, self.z_pos_des, self.yaw_rate_des,self.pitch_ref, self.mpc_dt)
-            sol = self.mpc.solve_QP(self.go2, self.traj, False)
-            if sol is not None:  
-                #self.get_logger().info(f"MPC solved at time {time_now:.3f}s")
-                self.last_mpc_solution = sol
-            else:
-                self.last_mpc_solution = None
-                self.get_logger().warn(f"MPC failed to solve at time {time_now:.3f}s")
+        w = sol["x"].full().flatten()
+        N = self.traj.N
 
-        # Compute leg torques from MPC solution
-        if self.last_mpc_solution is not None:
-            w = self.last_mpc_solution["x"].full().flatten()
-            N = self.traj.N
-            U = w[12*N:].reshape((12, N), order="F")
+        grf0 = w[12*N:12*N+12].copy()
 
-            grf = U[:, 0]  # Ground reaction force 
-            grf_FL = grf[0:3]
-            grf_FR = grf[3:6]
-            grf_RL = grf[6:9]
-            grf_RR = grf[9:12]
+        #print(f"model={(t1-t0)*1000:.2f} "f"traj={(t2-t1)*1000:.2f} "f"qp={(t3-t2)*1000:.2f}")
+        #self.get_logger().info(
+        #    f"[MPC] "
+        #    f"update={self.mpc.update_time:.2f} ms "
+        #    f"solve={self.mpc.solve_time:.2f} ms "
+        #    f"total={self.mpc.update_time+self.mpc.solve_time:.2f} ms"
+        #)
 
-            FL = self.leg_controller.compute_leg_torque("FL", self.go2, self.gait, grf_FL, time_now)
-            FR = self.leg_controller.compute_leg_torque("FR", self.go2, self.gait, grf_FR, time_now)
-            RL = self.leg_controller.compute_leg_torque("RL", self.go2, self.gait, grf_RL, time_now)
-            RR = self.leg_controller.compute_leg_torque("RR", self.go2, self.gait, grf_RR, time_now)
+        #self.get_logger().info(
+        #    f"[MPC SOLVED]"
+        #    f" sim_time={t:.4f}"
+        #    f" Fx_FL={grf0[0]:.2f}"
+        #    f" Fy_FL={grf0[1]:.2f}"
+        #    f" Fz_FL={grf0[2]:.2f}"
+        #)
 
-            tau = np.zeros(12)
+        des = (
+            self.go2_mpc.x_vel_des_world,
+            self.go2_mpc.y_vel_des_world,
+            self.go2_mpc.x_pos_des_world,
+            self.go2_mpc.y_pos_des_world,
+            self.go2_mpc.yaw_rate_des_world
+        )
 
-            tau[0:3]  = FL.tau
-            tau[3:6]  = FR.tau
-            tau[6:9]  = RL.tau
-            tau[9:12] = RR.tau
-
-            self.last_tau = np.clip(tau, -TAU_LIM, TAU_LIM)
-
-        #self.get_logger().info(f"Current q: {len(self.q)} dq: {len(self.dq)}")
-        # Publish torques
-        msg = Float64MultiArray()
-        msg.data = self.last_tau.tolist()
-
-        self.pub.publish(msg)
-
-        self.debug_counter += 1
-        self.mpc_counter += 1
-        #self.get_logger().info(f"dt_state = {self.get_clock().now().nanoseconds*1e-9 - self.last_time:.4f}")
-
+        with self.mpc_lock:
+            self.last_mpc_solution = sol
+            self.last_grf = grf0
+            self.last_des = des
 
     def state_callback(self, msg):
+        dt = msg.time - self.last_sim_time
+        self.last_sim_time = msg.time
+
+        #print(f"sim dt = {dt*1000:.2f} ms")
+
         with self.state_lock:
             self.q = np.array(msg.q)
             self.dq = np.array(msg.dq)
             self.last_time = msg.time
             self.last_state_time_wall = self.get_clock().now().nanoseconds * 1e-9
+            #self.get_logger().info(
+            #    f"[CTRL RX STATE]"
+            #    f" sim_time={msg.time:.4f}"
+            #    f" wall={self.get_clock().now().nanoseconds*1e-9:.4f}"
+            #    f" qz={self.q[2]:.3f}"
+            #    f" pitch={self.q[4]:.3f}"
+            #)
             #self.get_logger().info(f"Received state: q ({len(self.q)}), dq ({len(self.dq)})")
+
+            if self.q is None or self.dq is None:
+                return
+
+            q = self.q.copy()
+            dq = self.dq.copy()
+            t = self.last_time
+
+        t0 = time.thread_time()
+
+        self.go2.update_model(q, dq)
+
+        t1 = time.thread_time()
+
+        with self.mpc_lock:
+            sol = self.last_mpc_solution
+            if self.last_grf is None:
+                return
+            grf = self.last_grf.copy()
+            des = self.last_des
+
+            #self.get_logger().info(
+            #    f"[FAST LOOP]"
+            #    f" sim_time={t:.4f}"
+            #    f" Fz_FL={grf[2]:.2f}"
+            #)
+        
+        if sol is None:
+            return
+        
+        self.go2.x_vel_des_world = des[0]
+        self.go2.y_vel_des_world = des[1]
+        self.go2.x_pos_des_world = des[2]
+        self.go2.y_pos_des_world = des[3]
+        self.go2.yaw_rate_des_world = des[4]
+
+        FL = self.leg_controller.compute_leg_torque("FL", self.go2, self.gait, grf[0:3], t)
+        FR = self.leg_controller.compute_leg_torque("FR", self.go2, self.gait, grf[3:6], t)
+        RL = self.leg_controller.compute_leg_torque("RL", self.go2, self.gait, grf[6:9], t)
+        RR = self.leg_controller.compute_leg_torque("RR", self.go2, self.gait, grf[9:12], t)
+
+        t2 = time.thread_time()
+
+        tau = np.zeros(12)
+        tau[0:3] = FL.tau
+        tau[3:6] = FR.tau
+        tau[6:9] = RL.tau
+        tau[9:12] = RR.tau
+
+        self.last_tau = np.clip(tau, -TAU_LIM, TAU_LIM)
+
+        msg = Float64MultiArray()
+        msg.data = self.last_tau.tolist()
+        self.pub.publish(msg)
+
+        t3 = time.thread_time()
+        #self.get_logger().info(
+        #    f"[CTRL TX TORQUE]"
+        #    f" sim_time={t:.4f}"
+        #    f" tau0={self.last_tau[0]:.2f}"
+        #    f" tau1={self.last_tau[1]:.2f}"
+        #    f" tau2={self.last_tau[2]:.2f}"
+        #)
+
+        wall = self.get_clock().now().nanoseconds*1e-9
+        age = wall - self.last_state_time_wall
+
+        #self.get_logger().info(
+        #    f"[STATE AGE]"
+        #    f" age={age*1000:.2f} ms"
+        #    f"model={(t1-t0)*1000:.2f} "
+        #    f"legs={(t2-t1)*1000:.2f} "
+        #    f"pub={(t3-t2)*1000:.2f}"
+        #)
+        self.debug_counter += 1
+
 
     def compute_pitch(self, stair_height, stair_depth):
         pitch = -np.arctan(stair_height / stair_depth)
@@ -342,7 +437,9 @@ class MPCControllerNode(Node):
 def main():
     rclpy.init()
     node = MPCControllerNode()
-    rclpy.spin(node)
+    exe = MultiThreadedExecutor(num_threads=3)
+    exe.add_node(node)
+    exe.spin()
     node.destroy_node()
     rclpy.shutdown()
 

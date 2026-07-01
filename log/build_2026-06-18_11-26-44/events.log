@@ -1,0 +1,808 @@
+[0.000000] (-) TimerEvent: {}
+[0.003618] (convex_mpc) JobQueued: {'identifier': 'convex_mpc', 'dependencies': OrderedDict()}
+[0.003769] (robot_interfaces) JobQueued: {'identifier': 'robot_interfaces', 'dependencies': OrderedDict()}
+[0.003919] (simulation_py) JobQueued: {'identifier': 'simulation_py', 'dependencies': OrderedDict()}
+[0.003962] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict([('robot_interfaces', '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces')])}
+[0.004096] (robot_interfaces) JobStarted: {'identifier': 'robot_interfaces'}
+[0.050807] (convex_mpc) JobStarted: {'identifier': 'convex_mpc'}
+[0.074874] (simulation_py) JobStarted: {'identifier': 'simulation_py'}
+[0.098781] (-) TimerEvent: {}
+[0.117063] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'cmake'}
+[0.132991] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces'], 'cwd': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lukat'), ('GIT_ASKPASS', '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/lukat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/lukat/unitree_mujoco_ws'), ('TERM_PROGRAM_VERSION', '1.125.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5251c63b-0dfc-4e3e-aef8-4b2c066b1b4f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('_CONDA_ROOT', '/home/lukat/miniconda3'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lukat'), ('NAME', 'HP-EliteBook'), ('WSL_INTEROP', '/run/WSL/348_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/bin/remote-cli:/home/lukat/.local/bin:/home/lukat/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Users/lukat/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lukat/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7373f45496.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/lukat/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/lukat/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces'), ('COPILOT_DEBUG_NONCE', '3cae775b8b8024844ec3212e9461dcaf'), ('CONDA_EXE', '/home/lukat/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.199099] (-) TimerEvent: {}
+[0.300072] (-) TimerEvent: {}
+[0.400962] (-) TimerEvent: {}
+[0.501804] (-) TimerEvent: {}
+[0.602410] (-) TimerEvent: {}
+[0.703046] (-) TimerEvent: {}
+[0.803707] (-) TimerEvent: {}
+[0.904410] (-) TimerEvent: {}
+[1.005049] (-) TimerEvent: {}
+[1.105725] (-) TimerEvent: {}
+[1.206403] (-) TimerEvent: {}
+[1.307265] (-) TimerEvent: {}
+[1.408075] (-) TimerEvent: {}
+[1.508965] (-) TimerEvent: {}
+[1.609673] (-) TimerEvent: {}
+[1.683980] (robot_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.698933] (robot_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.709902] (-) TimerEvent: {}
+[1.810694] (-) TimerEvent: {}
+[1.911523] (-) TimerEvent: {}
+[2.012732] (-) TimerEvent: {}
+[2.045979] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.113006] (-) TimerEvent: {}
+[2.213948] (-) TimerEvent: {}
+[2.314641] (-) TimerEvent: {}
+[2.415444] (-) TimerEvent: {}
+[2.449873] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.481798] (robot_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.485688] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.488582] (robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.506077] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.515628] (-) TimerEvent: {}
+[2.616347] (-) TimerEvent: {}
+[2.717068] (-) TimerEvent: {}
+[2.817836] (-) TimerEvent: {}
+[2.855643] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.879074] (robot_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.879988] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.881417] (robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.918125] (-) TimerEvent: {}
+[2.936718] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.018317] (-) TimerEvent: {}
+[3.118913] (-) TimerEvent: {}
+[3.220047] (-) TimerEvent: {}
+[3.320923] (-) TimerEvent: {}
+[3.421682] (-) TimerEvent: {}
+[3.522238] (-) TimerEvent: {}
+[3.622827] (-) TimerEvent: {}
+[3.723436] (-) TimerEvent: {}
+[3.824036] (-) TimerEvent: {}
+[3.924761] (-) TimerEvent: {}
+[4.025359] (-) TimerEvent: {}
+[4.125962] (-) TimerEvent: {}
+[4.226688] (-) TimerEvent: {}
+[4.327548] (-) TimerEvent: {}
+[4.390342] (robot_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.427756] (-) TimerEvent: {}
+[4.528505] (-) TimerEvent: {}
+[4.629237] (-) TimerEvent: {}
+[4.730068] (-) TimerEvent: {}
+[4.767438] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[4.790161] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.814707] (convex_mpc) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/convex_mpc', 'build', '--build-base', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build', 'install', '--record', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lukat/unitree_mujoco_ws/COGAR_project/src/convex_mpc', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lukat', 'GIT_ASKPASS': '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/lukat', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/lukat/unitree_mujoco_ws', 'TERM_PROGRAM_VERSION': '1.125.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5251c63b-0dfc-4e3e-aef8-4b2c066b1b4f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', '_CONDA_ROOT': '/home/lukat/miniconda3', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lukat', 'NAME': 'HP-EliteBook', 'WSL_INTEROP': '/run/WSL/348_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/bin/remote-cli:/home/lukat/.local/bin:/home/lukat/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Users/lukat/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lukat/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7373f45496.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/lukat/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', '_CONDA_EXE': '/home/lukat/miniconda3/bin/conda', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc', 'COPILOT_DEBUG_NONCE': '3cae775b8b8024844ec3212e9461dcaf', 'CONDA_EXE': '/home/lukat/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'}, 'shell': False}
+[4.834708] (-) TimerEvent: {}
+[4.835005] (robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.835375] (simulation_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/simulation_py', 'build', '--build-base', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build', 'install', '--record', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lukat/unitree_mujoco_ws/COGAR_project/src/simulation_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lukat', 'GIT_ASKPASS': '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/lukat', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/lukat/unitree_mujoco_ws', 'TERM_PROGRAM_VERSION': '1.125.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5251c63b-0dfc-4e3e-aef8-4b2c066b1b4f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', '_CONDA_ROOT': '/home/lukat/miniconda3', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lukat', 'NAME': 'HP-EliteBook', 'WSL_INTEROP': '/run/WSL/348_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/bin/remote-cli:/home/lukat/.local/bin:/home/lukat/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Users/lukat/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lukat/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7373f45496.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/lukat/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', '_CONDA_EXE': '/home/lukat/miniconda3/bin/conda', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py', 'COPILOT_DEBUG_NONCE': '3cae775b8b8024844ec3212e9461dcaf', 'CONDA_EXE': '/home/lukat/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'}, 'shell': False}
+[4.934930] (-) TimerEvent: {}
+[5.035566] (-) TimerEvent: {}
+[5.136343] (-) TimerEvent: {}
+[5.237015] (-) TimerEvent: {}
+[5.237696] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.337205] (-) TimerEvent: {}
+[5.437896] (-) TimerEvent: {}
+[5.448071] (robot_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[5.538148] (-) TimerEvent: {}
+[5.638901] (-) TimerEvent: {}
+[5.739582] (-) TimerEvent: {}
+[5.769961] (convex_mpc) StdoutLine: {'line': b'running egg_info\n'}
+[5.786864] (simulation_py) StdoutLine: {'line': b'running egg_info\n'}
+[5.837233] (convex_mpc) StdoutLine: {'line': b'creating ../../build/convex_mpc/convex_mpc.egg-info\n'}
+[5.838740] (convex_mpc) StdoutLine: {'line': b'writing ../../build/convex_mpc/convex_mpc.egg-info/PKG-INFO\n'}
+[5.839794] (-) TimerEvent: {}
+[5.840824] (convex_mpc) StdoutLine: {'line': b'writing dependency_links to ../../build/convex_mpc/convex_mpc.egg-info/dependency_links.txt\n'}
+[5.842855] (convex_mpc) StdoutLine: {'line': b'writing requirements to ../../build/convex_mpc/convex_mpc.egg-info/requires.txt\n'}
+[5.843437] (convex_mpc) StdoutLine: {'line': b'writing top-level names to ../../build/convex_mpc/convex_mpc.egg-info/top_level.txt\n'}
+[5.844037] (convex_mpc) StdoutLine: {'line': b"writing manifest file '../../build/convex_mpc/convex_mpc.egg-info/SOURCES.txt'\n"}
+[5.848311] (simulation_py) StdoutLine: {'line': b'creating ../../build/simulation_py/simulation_py.egg-info\n'}
+[5.850173] (simulation_py) StdoutLine: {'line': b'writing ../../build/simulation_py/simulation_py.egg-info/PKG-INFO\n'}
+[5.852299] (simulation_py) StdoutLine: {'line': b'writing dependency_links to ../../build/simulation_py/simulation_py.egg-info/dependency_links.txt\n'}
+[5.855335] (simulation_py) StdoutLine: {'line': b'writing entry points to ../../build/simulation_py/simulation_py.egg-info/entry_points.txt\n'}
+[5.859180] (simulation_py) StdoutLine: {'line': b'writing requirements to ../../build/simulation_py/simulation_py.egg-info/requires.txt\n'}
+[5.860622] (simulation_py) StdoutLine: {'line': b'writing top-level names to ../../build/simulation_py/simulation_py.egg-info/top_level.txt\n'}
+[5.860987] (simulation_py) StdoutLine: {'line': b"writing manifest file '../../build/simulation_py/simulation_py.egg-info/SOURCES.txt'\n"}
+[5.939973] (-) TimerEvent: {}
+[5.987238] (convex_mpc) StdoutLine: {'line': b"reading manifest file '../../build/convex_mpc/convex_mpc.egg-info/SOURCES.txt'\n"}
+[5.990103] (convex_mpc) StdoutLine: {'line': b"writing manifest file '../../build/convex_mpc/convex_mpc.egg-info/SOURCES.txt'\n"}
+[5.990810] (convex_mpc) StdoutLine: {'line': b'running build\n'}
+[5.991560] (convex_mpc) StdoutLine: {'line': b'running build_py\n'}
+[5.993039] (convex_mpc) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc\n'}
+[5.997635] (convex_mpc) StdoutLine: {'line': b'copying convex_mpc/com_trajectory.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc\n'}
+[5.998858] (convex_mpc) StdoutLine: {'line': b'copying convex_mpc/centroidal_mpc.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc\n'}
+[6.000943] (convex_mpc) StdoutLine: {'line': b'copying convex_mpc/leg_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc\n'}
+[6.001877] (simulation_py) StdoutLine: {'line': b"reading manifest file '../../build/simulation_py/simulation_py.egg-info/SOURCES.txt'\n"}
+[6.002679] (convex_mpc) StdoutLine: {'line': b'copying convex_mpc/gait.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc\n'}
+[6.003355] (convex_mpc) StdoutLine: {'line': b'copying convex_mpc/__init__.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc\n'}
+[6.004064] (convex_mpc) StdoutLine: {'line': b'copying convex_mpc/mujoco_model.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc\n'}
+[6.004577] (simulation_py) StdoutLine: {'line': b"writing manifest file '../../build/simulation_py/simulation_py.egg-info/SOURCES.txt'\n"}
+[6.005171] (simulation_py) StdoutLine: {'line': b'running build\n'}
+[6.005399] (simulation_py) StdoutLine: {'line': b'running build_py\n'}
+[6.005871] (convex_mpc) StdoutLine: {'line': b'copying convex_mpc/go2_robot_data.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc\n'}
+[6.006717] (simulation_py) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build/lib/simulation_py\n'}
+[6.008370] (convex_mpc) StdoutLine: {'line': b'copying convex_mpc/plot_helper.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc\n'}
+[6.010267] (simulation_py) StdoutLine: {'line': b'copying simulation_py/simulation_node.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build/lib/simulation_py\n'}
+[6.012727] (convex_mpc) StdoutLine: {'line': b'running install\n'}
+[6.014121] (simulation_py) StdoutLine: {'line': b'copying simulation_py/__init__.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build/lib/simulation_py\n'}
+[6.015228] (simulation_py) StdoutLine: {'line': b'running install\n'}
+[6.027847] (convex_mpc) StdoutLine: {'line': b'running install_lib\n'}
+[6.029860] (simulation_py) StdoutLine: {'line': b'running install_lib\n'}
+[6.040199] (-) TimerEvent: {}
+[6.100746] (convex_mpc) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc\n'}
+[6.102150] (convex_mpc) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc/com_trajectory.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc\n'}
+[6.102896] (convex_mpc) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc/centroidal_mpc.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc\n'}
+[6.103863] (convex_mpc) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc/leg_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc\n'}
+[6.104777] (convex_mpc) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc/gait.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc\n'}
+[6.105550] (convex_mpc) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc/__init__.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc\n'}
+[6.106215] (convex_mpc) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc/mujoco_model.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc\n'}
+[6.106787] (convex_mpc) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc/go2_robot_data.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc\n'}
+[6.107439] (convex_mpc) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc/plot_helper.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc\n'}
+[6.107618] (simulation_py) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py\n'}
+[6.108462] (simulation_py) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build/lib/simulation_py/simulation_node.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py\n'}
+[6.109442] (simulation_py) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build/lib/simulation_py/__init__.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py\n'}
+[6.110524] (convex_mpc) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc/com_trajectory.py to com_trajectory.cpython-310.pyc\n'}
+[6.114195] (simulation_py) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py/simulation_node.py to simulation_node.cpython-310.pyc\n'}
+[6.124709] (convex_mpc) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc/centroidal_mpc.py to centroidal_mpc.cpython-310.pyc\n'}
+[6.126233] (simulation_py) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py/__init__.py to __init__.cpython-310.pyc\n'}
+[6.126909] (simulation_py) StdoutLine: {'line': b'running install_data\n'}
+[6.127965] (simulation_py) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/ament_index/resource_index/packages\n'}
+[6.131307] (convex_mpc) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc/leg_controller.py to leg_controller.cpython-310.pyc\n'}
+[6.131981] (simulation_py) StdoutLine: {'line': b'copying resource/simulation_py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/ament_index/resource_index/packages\n'}
+[6.133745] (simulation_py) StdoutLine: {'line': b'copying package.xml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py\n'}
+[6.134612] (simulation_py) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/launch\n'}
+[6.134817] (convex_mpc) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc/gait.py to gait.cpython-310.pyc\n'}
+[6.135874] (simulation_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.138794] (convex_mpc) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc/__init__.py to __init__.cpython-310.pyc\n'}
+[6.139785] (convex_mpc) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc/mujoco_model.py to mujoco_model.cpython-310.pyc\n'}
+[6.140809] (-) TimerEvent: {}
+[6.143299] (convex_mpc) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc/go2_robot_data.py to go2_robot_data.cpython-310.pyc\n'}
+[6.151213] (convex_mpc) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc/plot_helper.py to plot_helper.cpython-310.pyc\n'}
+[6.162710] (convex_mpc) StdoutLine: {'line': b'running install_data\n'}
+[6.163741] (convex_mpc) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/ament_index/resource_index/packages\n'}
+[6.171085] (convex_mpc) StdoutLine: {'line': b'copying resource/convex_mpc -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/ament_index/resource_index/packages\n'}
+[6.173126] (convex_mpc) StdoutLine: {'line': b'copying package.xml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc\n'}
+[6.173470] (convex_mpc) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.216521] (simulation_py) StdoutLine: {'line': b'Copying ../../build/simulation_py/simulation_py.egg-info to /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py-0.0.0-py3.10.egg-info\n'}
+[6.221171] (simulation_py) StdoutLine: {'line': b'running install_scripts\n'}
+[6.241543] (-) TimerEvent: {}
+[6.248239] (convex_mpc) StdoutLine: {'line': b'Copying ../../build/convex_mpc/convex_mpc.egg-info to /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc-0.0.0-py3.10.egg-info\n'}
+[6.255576] (convex_mpc) StdoutLine: {'line': b'running install_scripts\n'}
+[6.341756] (-) TimerEvent: {}
+[6.442404] (-) TimerEvent: {}
+[6.543300] (-) TimerEvent: {}
+[6.644002] (-) TimerEvent: {}
+[6.707838] (simulation_py) StdoutLine: {'line': b'Installing simulation_node script to /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/simulation_py\n'}
+[6.711426] (simulation_py) StdoutLine: {'line': b"writing list of installed files to '/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/install.log'\n"}
+[6.744265] (-) TimerEvent: {}
+[6.768238] (convex_mpc) StdoutLine: {'line': b"writing list of installed files to '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/install.log'\n"}
+[6.806280] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[6.845955] (-) TimerEvent: {}
+[6.849053] (simulation_py) CommandEnded: {'returncode': 0}
+[6.906382] (simulation_py) JobEnded: {'identifier': 'simulation_py', 'rc': 0}
+[6.911266] (convex_mpc) CommandEnded: {'returncode': 0}
+[6.946242] (-) TimerEvent: {}
+[6.950050] (convex_mpc) JobEnded: {'identifier': 'convex_mpc', 'rc': 0}
+[7.046461] (-) TimerEvent: {}
+[7.146973] (-) TimerEvent: {}
+[7.247684] (-) TimerEvent: {}
+[7.348362] (-) TimerEvent: {}
+[7.448887] (-) TimerEvent: {}
+[7.549581] (-) TimerEvent: {}
+[7.597736] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.649794] (-) TimerEvent: {}
+[7.750624] (-) TimerEvent: {}
+[7.851338] (-) TimerEvent: {}
+[7.951957] (-) TimerEvent: {}
+[8.052481] (-) TimerEvent: {}
+[8.153190] (-) TimerEvent: {}
+[8.253667] (-) TimerEvent: {}
+[8.354274] (-) TimerEvent: {}
+[8.454878] (-) TimerEvent: {}
+[8.546823] (robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.555153] (-) TimerEvent: {}
+[8.655901] (-) TimerEvent: {}
+[8.718634] (robot_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[8.725070] (robot_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[8.756080] (-) TimerEvent: {}
+[8.856773] (-) TimerEvent: {}
+[8.957555] (-) TimerEvent: {}
+[9.058184] (-) TimerEvent: {}
+[9.159018] (-) TimerEvent: {}
+[9.167072] (robot_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[9.168115] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[9.168481] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[9.168698] (robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[9.244657] (robot_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[9.259237] (-) TimerEvent: {}
+[9.359929] (-) TimerEvent: {}
+[9.460823] (-) TimerEvent: {}
+[9.561499] (-) TimerEvent: {}
+[9.662070] (-) TimerEvent: {}
+[9.690651] (robot_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.762300] (-) TimerEvent: {}
+[9.791489] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.800664] (robot_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.814245] (robot_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.862609] (-) TimerEvent: {}
+[9.963280] (-) TimerEvent: {}
+[10.024188] (robot_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[10.063517] (-) TimerEvent: {}
+[10.070788] (robot_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces\n'}
+[10.097762] (robot_interfaces) CommandEnded: {'returncode': 0}
+[10.099731] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'build'}
+[10.104635] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lukat'), ('GIT_ASKPASS', '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/lukat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/lukat/unitree_mujoco_ws'), ('TERM_PROGRAM_VERSION', '1.125.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5251c63b-0dfc-4e3e-aef8-4b2c066b1b4f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('_CONDA_ROOT', '/home/lukat/miniconda3'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lukat'), ('NAME', 'HP-EliteBook'), ('WSL_INTEROP', '/run/WSL/348_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/bin/remote-cli:/home/lukat/.local/bin:/home/lukat/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Users/lukat/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lukat/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7373f45496.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/lukat/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/lukat/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces'), ('COPILOT_DEBUG_NONCE', '3cae775b8b8024844ec3212e9461dcaf'), ('CONDA_EXE', '/home/lukat/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.163802] (-) TimerEvent: {}
+[10.226583] (robot_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[10.262293] (robot_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[10.263949] (-) TimerEvent: {}
+[10.273886] (robot_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[10.284638] (robot_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_robot_interfaces\n'}
+[10.364177] (-) TimerEvent: {}
+[10.464797] (-) TimerEvent: {}
+[10.565336] (-) TimerEvent: {}
+[10.665944] (-) TimerEvent: {}
+[10.766526] (-) TimerEvent: {}
+[10.867230] (-) TimerEvent: {}
+[10.967741] (-) TimerEvent: {}
+[11.068279] (-) TimerEvent: {}
+[11.136797] (robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[11.168491] (-) TimerEvent: {}
+[11.213981] (robot_interfaces) StdoutLine: {'line': b'creating robot_interfaces.egg-info\n'}
+[11.215647] (robot_interfaces) StdoutLine: {'line': b'writing robot_interfaces.egg-info/PKG-INFO\n'}
+[11.217089] (robot_interfaces) StdoutLine: {'line': b'writing dependency_links to robot_interfaces.egg-info/dependency_links.txt\n'}
+[11.218407] (robot_interfaces) StdoutLine: {'line': b'writing top-level names to robot_interfaces.egg-info/top_level.txt\n'}
+[11.219006] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[11.268741] (-) TimerEvent: {}
+[11.370827] (-) TimerEvent: {}
+[11.471578] (-) TimerEvent: {}
+[11.493757] (robot_interfaces) StdoutLine: {'line': b"reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[11.497297] (robot_interfaces) StdoutLine: {'line': b"writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'\n"}
+[11.571835] (-) TimerEvent: {}
+[11.609284] (robot_interfaces) StdoutLine: {'line': b'[  5%] Built target robot_interfaces__rs\n'}
+[11.612666] (robot_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_robot_interfaces_egg\n'}
+[11.672075] (-) TimerEvent: {}
+[11.772695] (-) TimerEvent: {}
+[11.873410] (-) TimerEvent: {}
+[11.974228] (-) TimerEvent: {}
+[12.075013] (-) TimerEvent: {}
+[12.175817] (-) TimerEvent: {}
+[12.277233] (-) TimerEvent: {}
+[12.379349] (-) TimerEvent: {}
+[12.417664] (robot_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/robot_state__functions.c.o\x1b[0m\n'}
+[12.419811] (robot_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/update_single_param__functions.c.o\x1b[0m\n'}
+[12.420248] (robot_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/update_gait_params__functions.c.o\x1b[0m\n'}
+[12.423342] (robot_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/set_body_height__functions.c.o\x1b[0m\n'}
+[12.442804] (robot_interfaces) StdoutLine: {'line': b'[ 12%] Built target robot_interfaces__cpp\n'}
+[12.473253] (robot_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[12.473558] (robot_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.479322] (-) TimerEvent: {}
+[12.481649] (robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.604291] (-) TimerEvent: {}
+[12.710726] (-) TimerEvent: {}
+[12.811493] (-) TimerEvent: {}
+[12.912270] (-) TimerEvent: {}
+[13.014498] (-) TimerEvent: {}
+[13.116542] (-) TimerEvent: {}
+[13.218713] (-) TimerEvent: {}
+[13.272593] (robot_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[13.320043] (-) TimerEvent: {}
+[13.420828] (-) TimerEvent: {}
+[13.521508] (-) TimerEvent: {}
+[13.527363] (robot_interfaces) StdoutLine: {'line': b'[ 19%] Built target robot_interfaces__rosidl_generator_c\n'}
+[13.566978] (robot_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.571806] (robot_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[13.576136] (robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.621771] (-) TimerEvent: {}
+[13.722790] (-) TimerEvent: {}
+[13.823481] (-) TimerEvent: {}
+[13.924872] (-) TimerEvent: {}
+[14.026087] (-) TimerEvent: {}
+[14.126762] (-) TimerEvent: {}
+[14.234821] (-) TimerEvent: {}
+[14.335497] (-) TimerEvent: {}
+[14.436644] (-) TimerEvent: {}
+[14.537182] (-) TimerEvent: {}
+[14.637888] (-) TimerEvent: {}
+[14.751246] (-) TimerEvent: {}
+[14.752350] (robot_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/update_single_param__type_support.cpp.o\x1b[0m\n'}
+[14.756130] (robot_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/robot_state__type_support.cpp.o\x1b[0m\n'}
+[14.757238] (robot_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/update_gait_params__type_support.cpp.o\x1b[0m\n'}
+[14.852787] (-) TimerEvent: {}
+[14.960173] (-) TimerEvent: {}
+[15.060816] (-) TimerEvent: {}
+[15.161480] (-) TimerEvent: {}
+[15.165579] (robot_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/robot_state__type_support.cpp.o\x1b[0m\n'}
+[15.261751] (-) TimerEvent: {}
+[15.362523] (-) TimerEvent: {}
+[15.470713] (-) TimerEvent: {}
+[15.579191] (-) TimerEvent: {}
+[15.686129] (-) TimerEvent: {}
+[15.795003] (-) TimerEvent: {}
+[15.847409] (robot_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/robot_state__type_support.cpp.o\x1b[0m\n'}
+[15.895263] (-) TimerEvent: {}
+[15.925684] (robot_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/robot_state__type_support.cpp.o\x1b[0m\n'}
+[15.998249] (-) TimerEvent: {}
+[16.098985] (-) TimerEvent: {}
+[16.111582] (robot_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/update_gait_params__type_support.cpp.o\x1b[0m\n'}
+[16.199374] (-) TimerEvent: {}
+[16.252015] (robot_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/update_single_param__type_support.cpp.o\x1b[0m\n'}
+[16.299544] (-) TimerEvent: {}
+[16.378318] (robot_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/robot_state__type_support.c.o\x1b[0m\n'}
+[16.399728] (-) TimerEvent: {}
+[16.426688] (robot_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/set_body_height__type_support.cpp.o\x1b[0m\n'}
+[16.504649] (-) TimerEvent: {}
+[16.568398] (robot_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[16.578657] (robot_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/robot_state__type_support_c.cpp.o\x1b[0m\n'}
+[16.604843] (-) TimerEvent: {}
+[16.670640] (robot_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/update_gait_params__type_support.c.o\x1b[0m\n'}
+[16.706947] (-) TimerEvent: {}
+[16.811235] (-) TimerEvent: {}
+[16.912897] (-) TimerEvent: {}
+[16.955424] (robot_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/update_single_param__type_support.c.o\x1b[0m\n'}
+[16.971258] (robot_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/update_gait_params__type_support.cpp.o\x1b[0m\n'}
+[17.022891] (robot_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/update_gait_params__type_support.cpp.o\x1b[0m\n'}
+[17.023519] (-) TimerEvent: {}
+[17.041322] (robot_interfaces) StdoutLine: {'line': b'[ 53%] Built target robot_interfaces__rosidl_typesupport_c\n'}
+[17.085979] (robot_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/set_body_height__type_support.cpp.o\x1b[0m\n'}
+[17.086690] (robot_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/set_body_height__type_support.c.o\x1b[0m\n'}
+[17.123945] (-) TimerEvent: {}
+[17.169168] (robot_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/update_gait_params__type_support_c.cpp.o\x1b[0m\n'}
+[17.224144] (-) TimerEvent: {}
+[17.282304] (robot_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library librobot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[17.324307] (-) TimerEvent: {}
+[17.424913] (-) TimerEvent: {}
+[17.511241] (robot_interfaces) StdoutLine: {'line': b'[ 60%] Built target robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[17.525151] (-) TimerEvent: {}
+[17.555665] (robot_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/update_single_param__type_support.cpp.o\x1b[0m\n'}
+[17.625354] (-) TimerEvent: {}
+[17.725936] (-) TimerEvent: {}
+[17.786655] (robot_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/set_body_height__type_support.cpp.o\x1b[0m\n'}
+[17.826132] (-) TimerEvent: {}
+[17.927185] (-) TimerEvent: {}
+[18.031550] (-) TimerEvent: {}
+[18.144089] (-) TimerEvent: {}
+[18.244884] (-) TimerEvent: {}
+[18.349472] (-) TimerEvent: {}
+[18.451236] (-) TimerEvent: {}
+[18.553026] (-) TimerEvent: {}
+[18.657025] (-) TimerEvent: {}
+[18.759381] (-) TimerEvent: {}
+[18.862266] (-) TimerEvent: {}
+[18.965986] (-) TimerEvent: {}
+[19.060119] (robot_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/update_single_param__type_support_c.cpp.o\x1b[0m\n'}
+[19.065934] (-) TimerEvent: {}
+[19.069092] (robot_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/set_body_height__type_support_c.cpp.o\x1b[0m\n'}
+[19.171267] (-) TimerEvent: {}
+[19.272517] (-) TimerEvent: {}
+[19.350120] (robot_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[19.372759] (-) TimerEvent: {}
+[19.473366] (-) TimerEvent: {}
+[19.576990] (-) TimerEvent: {}
+[19.683341] (-) TimerEvent: {}
+[19.783946] (-) TimerEvent: {}
+[19.830526] (robot_interfaces) StdoutLine: {'line': b'[ 69%] Built target robot_interfaces__rosidl_typesupport_cpp\n'}
+[19.884292] (-) TimerEvent: {}
+[19.912654] (robot_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/update_single_param__type_support.cpp.o\x1b[0m\n'}
+[19.988071] (-) TimerEvent: {}
+[20.033302] (robot_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/set_body_height__type_support.cpp.o\x1b[0m\n'}
+[20.088277] (-) TimerEvent: {}
+[20.191037] (-) TimerEvent: {}
+[20.292063] (-) TimerEvent: {}
+[20.392638] (-) TimerEvent: {}
+[20.493337] (-) TimerEvent: {}
+[20.594051] (-) TimerEvent: {}
+[20.696222] (-) TimerEvent: {}
+[20.800420] (-) TimerEvent: {}
+[20.901769] (-) TimerEvent: {}
+[20.920979] (robot_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[21.001993] (-) TimerEvent: {}
+[21.102837] (-) TimerEvent: {}
+[21.203584] (-) TimerEvent: {}
+[21.304312] (-) TimerEvent: {}
+[21.405121] (-) TimerEvent: {}
+[21.503205] (robot_interfaces) StdoutLine: {'line': b'[ 75%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[21.505607] (-) TimerEvent: {}
+[21.591212] (robot_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[21.605901] (-) TimerEvent: {}
+[21.706609] (-) TimerEvent: {}
+[21.807311] (-) TimerEvent: {}
+[21.907999] (-) TimerEvent: {}
+[21.979885] (robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[22.008212] (-) TimerEvent: {}
+[22.108905] (-) TimerEvent: {}
+[22.209674] (-) TimerEvent: {}
+[22.224845] (robot_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[22.309936] (-) TimerEvent: {}
+[22.410648] (-) TimerEvent: {}
+[22.511309] (-) TimerEvent: {}
+[22.548936] (robot_interfaces) StdoutLine: {'line': b'[ 78%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[22.611487] (-) TimerEvent: {}
+[22.612281] (robot_interfaces) StdoutLine: {'line': b'[ 78%] Built target robot_interfaces\n'}
+[22.668545] (robot_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[22.711715] (-) TimerEvent: {}
+[22.812241] (-) TimerEvent: {}
+[22.912857] (-) TimerEvent: {}
+[23.013445] (-) TimerEvent: {}
+[23.114185] (-) TimerEvent: {}
+[23.214902] (-) TimerEvent: {}
+[23.315705] (-) TimerEvent: {}
+[23.416443] (-) TimerEvent: {}
+[23.517150] (-) TimerEvent: {}
+[23.617695] (-) TimerEvent: {}
+[23.718317] (-) TimerEvent: {}
+[23.818963] (-) TimerEvent: {}
+[23.919758] (-) TimerEvent: {}
+[24.020485] (-) TimerEvent: {}
+[24.121321] (-) TimerEvent: {}
+[24.222063] (-) TimerEvent: {}
+[24.322622] (-) TimerEvent: {}
+[24.423283] (-) TimerEvent: {}
+[24.523908] (-) TimerEvent: {}
+[24.624460] (-) TimerEvent: {}
+[24.724923] (-) TimerEvent: {}
+[24.825500] (-) TimerEvent: {}
+[24.926201] (-) TimerEvent: {}
+[25.026864] (-) TimerEvent: {}
+[25.127794] (-) TimerEvent: {}
+[25.228446] (-) TimerEvent: {}
+[25.329016] (-) TimerEvent: {}
+[25.413553] (robot_interfaces) StdoutLine: {'line': b'[ 80%] Built target robot_interfaces__py\n'}
+[25.429237] (-) TimerEvent: {}
+[25.467090] (robot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_update_single_param_s.c.o\x1b[0m\n'}
+[25.468034] (robot_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_update_gait_params_s.c.o\x1b[0m\n'}
+[25.470694] (robot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_robot_state_s.c.o\x1b[0m\n'}
+[25.471253] (robot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_set_body_height_s.c.o\x1b[0m\n'}
+[25.529579] (-) TimerEvent: {}
+[25.630354] (-) TimerEvent: {}
+[25.731329] (-) TimerEvent: {}
+[25.832032] (-) TimerEvent: {}
+[25.932691] (-) TimerEvent: {}
+[26.017072] (robot_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[26.032940] (-) TimerEvent: {}
+[26.133621] (-) TimerEvent: {}
+[26.183312] (robot_interfaces) StdoutLine: {'line': b'[ 89%] Built target robot_interfaces__rosidl_generator_py\n'}
+[26.232213] (robot_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[26.233938] (-) TimerEvent: {}
+[26.234975] (robot_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[26.235321] (robot_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[26.334227] (-) TimerEvent: {}
+[26.434941] (-) TimerEvent: {}
+[26.535756] (-) TimerEvent: {}
+[26.636445] (-) TimerEvent: {}
+[26.650350] (robot_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[26.664585] (robot_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[26.669978] (robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[26.736694] (-) TimerEvent: {}
+[26.837491] (-) TimerEvent: {}
+[26.862242] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[26.872721] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[26.877194] (robot_interfaces) StdoutLine: {'line': b'[100%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[26.907063] (robot_interfaces) CommandEnded: {'returncode': 0}
+[26.909608] (robot_interfaces) JobProgress: {'identifier': 'robot_interfaces', 'progress': 'install'}
+[26.933230] (robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces'], 'cwd': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lukat'), ('GIT_ASKPASS', '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/lukat'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/lukat/unitree_mujoco_ws'), ('TERM_PROGRAM_VERSION', '1.125.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5251c63b-0dfc-4e3e-aef8-4b2c066b1b4f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('_CONDA_ROOT', '/home/lukat/miniconda3'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lukat'), ('NAME', 'HP-EliteBook'), ('WSL_INTEROP', '/run/WSL/348_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/bin/remote-cli:/home/lukat/.local/bin:/home/lukat/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Users/lukat/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lukat/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7373f45496.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/lukat/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('_CONDA_EXE', '/home/lukat/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces'), ('COPILOT_DEBUG_NONCE', '3cae775b8b8024844ec3212e9461dcaf'), ('CONDA_EXE', '/home/lukat/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[26.937820] (-) TimerEvent: {}
+[26.952322] (robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.959876] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/robot_interfaces\n'}
+[26.960561] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[26.963523] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[26.965613] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/update_gait_params.h\n'}
+[26.966254] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/set_body_height.h\n'}
+[26.967081] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/update_single_param.h\n'}
+[26.967486] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[26.968693] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__struct.h\n'}
+[26.969860] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__struct.h\n'}
+[26.970297] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__functions.h\n'}
+[26.970984] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__type_support.h\n'}
+[26.971476] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__type_support.h\n'}
+[26.971805] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__functions.c\n'}
+[26.972194] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__functions.c\n'}
+[26.972744] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__struct.h\n'}
+[26.972966] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__functions.c\n'}
+[26.973181] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__type_support.h\n'}
+[26.973668] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__functions.h\n'}
+[26.974075] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__functions.h\n'}
+[26.974517] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[26.975256] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/robot_state.h\n'}
+[26.976151] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[26.976493] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[26.976735] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__struct.h\n'}
+[26.976926] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__functions.c\n'}
+[26.977137] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__type_support.h\n'}
+[26.977460] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__functions.h\n'}
+[26.978773] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/library_path.sh\n'}
+[26.979421] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/library_path.dsv\n'}
+[26.980934] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so\n'}
+[26.982377] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so" to ""\n'}
+[26.982984] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[26.984010] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[26.985017] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[26.985296] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__rosidl_typesupport_fastrtps_c.h\n'}
+[26.985769] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__rosidl_typesupport_fastrtps_c.h\n'}
+[26.986263] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__rosidl_typesupport_fastrtps_c.h\n'}
+[26.987086] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[26.987421] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[26.987775] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[26.988240] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__rosidl_typesupport_fastrtps_c.h\n'}
+[26.988627] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[26.989547] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[26.990135] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[26.990719] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[26.991665] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[26.992245] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__rosidl_typesupport_introspection_c.h\n'}
+[26.992786] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__rosidl_typesupport_introspection_c.h\n'}
+[26.993489] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__type_support.c\n'}
+[26.993622] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__type_support.c\n'}
+[26.993719] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__type_support.c\n'}
+[26.993843] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__rosidl_typesupport_introspection_c.h\n'}
+[26.994071] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[26.994625] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[26.994775] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[26.994971] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__rosidl_typesupport_introspection_c.h\n'}
+[26.995102] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__type_support.c\n'}
+[26.995561] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[26.996169] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[26.997080] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so\n'}
+[26.997485] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[26.997817] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[26.998777] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[26.999187] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/update_gait_params.hpp\n'}
+[27.000252] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/set_body_height.hpp\n'}
+[27.000960] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[27.001511] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__type_support.hpp\n'}
+[27.001910] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__struct.hpp\n'}
+[27.002501] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__builder.hpp\n'}
+[27.003029] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__struct.hpp\n'}
+[27.003671] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__traits.hpp\n'}
+[27.004253] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__type_support.hpp\n'}
+[27.004793] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__type_support.hpp\n'}
+[27.005261] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__builder.hpp\n'}
+[27.005744] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__struct.hpp\n'}
+[27.006020] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__traits.hpp\n'}
+[27.006388] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__builder.hpp\n'}
+[27.006730] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__traits.hpp\n'}
+[27.007084] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/update_single_param.hpp\n'}
+[27.007995] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[27.008404] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/robot_state.hpp\n'}
+[27.008773] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[27.009282] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__struct.hpp\n'}
+[27.009836] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__builder.hpp\n'}
+[27.010360] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__type_support.hpp\n'}
+[27.010826] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__traits.hpp\n'}
+[27.011690] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[27.012055] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[27.012364] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[27.012878] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[27.013016] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.013126] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.013232] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/dds_fastrtps\n'}
+[27.013346] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.013824] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[27.014201] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[27.014720] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/dds_fastrtps\n'}
+[27.015344] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[27.015927] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[27.016695] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[27.017101] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[27.017576] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces\n'}
+[27.018029] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv\n'}
+[27.018504] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail\n'}
+[27.018949] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__type_support.cpp\n'}
+[27.019517] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__type_support.cpp\n'}
+[27.020196] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__rosidl_typesupport_introspection_cpp.hpp\n'}
+[27.020444] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__rosidl_typesupport_introspection_cpp.hpp\n'}
+[27.020674] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__type_support.cpp\n'}
+[27.021405] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__rosidl_typesupport_introspection_cpp.hpp\n'}
+[27.021561] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg\n'}
+[27.021681] (robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail\n'}
+[27.021787] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__type_support.cpp\n'}
+[27.021900] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[27.022027] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[27.022129] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[27.022234] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so\n'}
+[27.022368] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[27.022467] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.sh\n'}
+[27.022569] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.dsv\n'}
+[27.022673] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info\n'}
+[27.024630] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[27.025576] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[27.025850] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[27.026263] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[27.026522] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces\n'}
+[27.027423] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[27.028084] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/librobot_interfaces__rosidl_generator_py.so\n'}
+[27.028818] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.029508] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv\n'}
+[27.030503] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_single_param_s.c\n'}
+[27.030966] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_set_body_height_s.c\n'}
+[27.032026] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_single_param.py\n'}
+[27.032481] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/__init__.py\n'}
+[27.033528] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_gait_params_s.c\n'}
+[27.033985] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_gait_params.py\n'}
+[27.034525] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_set_body_height.py\n'}
+[27.035419] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.036181] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py\n'}
+[27.036712] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg\n'}
+[27.038019] (-) TimerEvent: {}
+[27.038652] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_robot_state_s.c\n'}
+[27.039384] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py\n'}
+[27.040640] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_robot_state.py\n'}
+[27.041380] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.041578] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[27.042050] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[27.138240] (-) TimerEvent: {}
+[27.160745] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces'...\n"}
+[27.161132] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py'...\n"}
+[27.161253] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg'...\n"}
+[27.161355] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py'...\n"}
+[27.161484] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_robot_state.py'...\n"}
+[27.161584] (robot_interfaces) StdoutLine: {'line': b"Listing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv'...\n"}
+[27.161688] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/__init__.py'...\n"}
+[27.161804] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_set_body_height.py'...\n"}
+[27.161901] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_gait_params.py'...\n"}
+[27.162032] (robot_interfaces) StdoutLine: {'line': b"Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_single_param.py'...\n"}
+[27.175305] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.176162] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[27.176684] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.177036] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[27.177421] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.178042] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[27.178469] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so\n'}
+[27.178968] (robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so" to ""\n'}
+[27.180117] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/rust_packages/robot_interfaces\n'}
+[27.180868] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust\n'}
+[27.181625] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/Cargo.toml\n'}
+[27.182553] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src\n'}
+[27.183409] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/msg.rs\n'}
+[27.183690] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/srv.rs\n'}
+[27.184073] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/srv\n'}
+[27.186132] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/srv/rmw.rs\n'}
+[27.187105] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/msg\n'}
+[27.187979] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/msg/rmw.rs\n'}
+[27.188373] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/lib.rs\n'}
+[27.189022] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/build.rs\n'}
+[27.189880] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/msg/RobotState.idl\n'}
+[27.191739] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateGaitParams.idl\n'}
+[27.192677] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateSingleParam.idl\n'}
+[27.193313] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/SetBodyHeight.idl\n'}
+[27.193680] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/msg/RobotState.msg\n'}
+[27.194550] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateGaitParams.srv\n'}
+[27.195194] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateGaitParams_Request.msg\n'}
+[27.195640] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateGaitParams_Response.msg\n'}
+[27.196399] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateSingleParam.srv\n'}
+[27.197070] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateSingleParam_Request.msg\n'}
+[27.197722] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateSingleParam_Response.msg\n'}
+[27.198213] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/SetBodyHeight.srv\n'}
+[27.198702] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/SetBodyHeight_Request.msg\n'}
+[27.199386] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/SetBodyHeight_Response.msg\n'}
+[27.200713] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/package_run_dependencies/robot_interfaces\n'}
+[27.201675] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/parent_prefix_path/robot_interfaces\n'}
+[27.202039] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.sh\n'}
+[27.202374] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[27.202799] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/path.sh\n'}
+[27.203581] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/path.dsv\n'}
+[27.203824] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/local_setup.bash\n'}
+[27.204580] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/local_setup.sh\n'}
+[27.204767] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/local_setup.zsh\n'}
+[27.205062] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/local_setup.dsv\n'}
+[27.205638] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.dsv\n'}
+[27.206006] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/packages/robot_interfaces\n'}
+[27.208218] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[27.209305] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[27.209777] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[27.210377] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[27.210552] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[27.210914] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[27.211499] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[27.212040] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[27.212583] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[27.213275] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[27.213925] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[27.214131] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[27.214604] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[27.215247] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[27.215985] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[27.216508] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[27.217193] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[27.217567] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[27.218204] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[27.218840] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[27.219646] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[27.220130] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[27.220765] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[27.221122] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[27.221794] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig.cmake\n'}
+[27.222047] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig-version.cmake\n'}
+[27.222175] (robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.xml\n'}
+[27.226347] (robot_interfaces) CommandEnded: {'returncode': 0}
+[27.239029] (-) TimerEvent: {}
+[27.285724] (robot_interfaces) JobEnded: {'identifier': 'robot_interfaces', 'rc': 0}
+[27.288222] (controller) JobStarted: {'identifier': 'controller'}
+[27.339358] (-) TimerEvent: {}
+[27.440234] (-) TimerEvent: {}
+[27.540944] (-) TimerEvent: {}
+[27.641430] (-) TimerEvent: {}
+[27.741964] (-) TimerEvent: {}
+[27.842567] (-) TimerEvent: {}
+[27.943343] (-) TimerEvent: {}
+[28.044036] (-) TimerEvent: {}
+[28.144743] (-) TimerEvent: {}
+[28.245445] (-) TimerEvent: {}
+[28.346103] (-) TimerEvent: {}
+[28.446698] (-) TimerEvent: {}
+[28.547268] (-) TimerEvent: {}
+[28.647914] (-) TimerEvent: {}
+[28.748584] (-) TimerEvent: {}
+[28.849230] (-) TimerEvent: {}
+[28.949838] (-) TimerEvent: {}
+[29.050375] (-) TimerEvent: {}
+[29.151006] (-) TimerEvent: {}
+[29.251673] (-) TimerEvent: {}
+[29.352369] (-) TimerEvent: {}
+[29.453034] (-) TimerEvent: {}
+[29.553896] (-) TimerEvent: {}
+[29.654703] (-) TimerEvent: {}
+[29.736882] (controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/controller', 'build', '--build-base', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build', 'install', '--record', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lukat', 'GIT_ASKPASS': '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/lukat', 'CONDA_SHLVL': '0', 'OLDPWD': '/home/lukat/unitree_mujoco_ws', 'TERM_PROGRAM_VERSION': '1.125.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5251c63b-0dfc-4e3e-aef8-4b2c066b1b4f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', '_CONDA_ROOT': '/home/lukat/miniconda3', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lukat', 'NAME': 'HP-EliteBook', 'WSL_INTEROP': '/run/WSL/348_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/lukat/.vscode-server/bin/93cfdd489c3b228840d0f86ec77c3636277c93ea/bin/remote-cli:/home/lukat/.local/bin:/home/lukat/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Users/lukat/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lukat/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7373f45496.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/lukat/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', '_CONDA_EXE': '/home/lukat/miniconda3/bin/conda', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller', 'COPILOT_DEBUG_NONCE': '3cae775b8b8024844ec3212e9461dcaf', 'CONDA_EXE': '/home/lukat/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages:/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up', 'CMAKE_PREFIX_PATH': '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces'}, 'shell': False}
+[29.754915] (-) TimerEvent: {}
+[29.855708] (-) TimerEvent: {}
+[29.956447] (-) TimerEvent: {}
+[30.057090] (-) TimerEvent: {}
+[30.157777] (-) TimerEvent: {}
+[30.258314] (-) TimerEvent: {}
+[30.358953] (-) TimerEvent: {}
+[30.459687] (-) TimerEvent: {}
+[30.505163] (controller) StdoutLine: {'line': b'running egg_info\n'}
+[30.550486] (controller) StdoutLine: {'line': b'creating ../../build/controller/controller.egg-info\n'}
+[30.553985] (controller) StdoutLine: {'line': b'writing ../../build/controller/controller.egg-info/PKG-INFO\n'}
+[30.555344] (controller) StdoutLine: {'line': b'writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt\n'}
+[30.555944] (controller) StdoutLine: {'line': b'writing entry points to ../../build/controller/controller.egg-info/entry_points.txt\n'}
+[30.556651] (controller) StdoutLine: {'line': b'writing requirements to ../../build/controller/controller.egg-info/requires.txt\n'}
+[30.557017] (controller) StdoutLine: {'line': b'writing top-level names to ../../build/controller/controller.egg-info/top_level.txt\n'}
+[30.557517] (controller) StdoutLine: {'line': b"writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[30.559910] (-) TimerEvent: {}
+[30.660616] (-) TimerEvent: {}
+[30.664299] (controller) StdoutLine: {'line': b"reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[30.668036] (controller) StdoutLine: {'line': b"writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'\n"}
+[30.668738] (controller) StdoutLine: {'line': b'running build\n'}
+[30.669542] (controller) StdoutLine: {'line': b'running build_py\n'}
+[30.669831] (controller) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller\n'}
+[30.673353] (controller) StdoutLine: {'line': b'copying controller/convex_mpc_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller\n'}
+[30.674979] (controller) StdoutLine: {'line': b'copying controller/rl_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller\n'}
+[30.676619] (controller) StdoutLine: {'line': b'copying controller/__init__.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller\n'}
+[30.678891] (controller) StdoutLine: {'line': b'copying controller/load_policy.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller\n'}
+[30.681551] (controller) StdoutLine: {'line': b'running install\n'}
+[30.692807] (controller) StdoutLine: {'line': b'running install_lib\n'}
+[30.750393] (controller) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller\n'}
+[30.751935] (controller) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller/convex_mpc_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller\n'}
+[30.752823] (controller) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller/rl_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller\n'}
+[30.753742] (controller) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller/__init__.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller\n'}
+[30.754337] (controller) StdoutLine: {'line': b'copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller/load_policy.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller\n'}
+[30.756189] (controller) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller/convex_mpc_controller.py to convex_mpc_controller.cpython-310.pyc\n'}
+[30.760891] (-) TimerEvent: {}
+[30.764465] (controller) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller/rl_controller.py to rl_controller.cpython-310.pyc\n'}
+[30.771358] (controller) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller/__init__.py to __init__.cpython-310.pyc\n'}
+[30.772478] (controller) StdoutLine: {'line': b'byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller/load_policy.py to load_policy.cpython-310.pyc\n'}
+[30.774238] (controller) StdoutLine: {'line': b'running install_data\n'}
+[30.775406] (controller) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/ament_index/resource_index/packages\n'}
+[30.780951] (controller) StdoutLine: {'line': b'copying resource/controller -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/ament_index/resource_index/packages\n'}
+[30.781815] (controller) StdoutLine: {'line': b'copying package.xml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller\n'}
+[30.782513] (controller) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/policies\n'}
+[30.784648] (controller) StdoutLine: {'line': b'copying policies/HIM_policy.pt -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/policies\n'}
+[30.793657] (controller) StdoutLine: {'line': b'copying policies/kp_kd_random_policy.pt -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/policies\n'}
+[30.801909] (controller) StdoutLine: {'line': b'copying policies/policy_with_45_obs.pt -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/policies\n'}
+[30.808701] (controller) StdoutLine: {'line': b'creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/config\n'}
+[30.809646] (controller) StdoutLine: {'line': b'copying config/go2.yaml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/config\n'}
+[30.810880] (controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[30.861088] (-) TimerEvent: {}
+[30.866699] (controller) StdoutLine: {'line': b'Copying ../../build/controller/controller.egg-info to /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info\n'}
+[30.872133] (controller) StdoutLine: {'line': b'running install_scripts\n'}
+[30.961357] (-) TimerEvent: {}
+[31.061997] (-) TimerEvent: {}
+[31.162592] (-) TimerEvent: {}
+[31.244117] (controller) StdoutLine: {'line': b'Installing controller_node script to /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/controller\n'}
+[31.245753] (controller) StdoutLine: {'line': b'Installing rl_controller script to /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/controller\n'}
+[31.246543] (controller) StdoutLine: {'line': b"writing list of installed files to '/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log'\n"}
+[31.262774] (-) TimerEvent: {}
+[31.344575] (controller) CommandEnded: {'returncode': 0}
+[31.363525] (-) TimerEvent: {}
+[31.368393] (controller) JobEnded: {'identifier': 'controller', 'rc': 0}
+[31.371726] (-) EventReactorShutdown: {}

@@ -1,0 +1,389 @@
+[1.225s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.226s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7e2192713640>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e2192712fb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e2192712fb0>>, mixin_verb=('build',))
+[1.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.475s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.476s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.476s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lukat/unitree_mujoco_ws/COGAR_project'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['ignore', 'ignore_ament_install']
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ignore'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ignore_ament_install'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['colcon_pkg']
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'colcon_pkg'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['colcon_meta']
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'colcon_meta'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['ros']
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ros'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['cmake', 'python']
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'cmake'
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'python'
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['python_setup_py']
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'python_setup_py'
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extensions ['ignore', 'ignore_ament_install']
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extension 'ignore'
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extension 'ignore_ament_install'
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extensions ['colcon_pkg']
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extension 'colcon_pkg'
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extensions ['colcon_meta']
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extension 'colcon_meta'
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extensions ['ros']
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extension 'ros'
+[1.558s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extensions ['cmake', 'python']
+[1.558s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extension 'cmake'
+[1.558s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extension 'python'
+[1.558s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extensions ['python_setup_py']
+[1.558s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF) by extension 'python_setup_py'
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extensions ['ignore', 'ignore_ament_install']
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extension 'ignore'
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extension 'ignore_ament_install'
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extensions ['colcon_pkg']
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extension 'colcon_pkg'
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extensions ['colcon_meta']
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extension 'colcon_meta'
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extensions ['ros']
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extension 'ros'
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extensions ['cmake', 'python']
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extension 'cmake'
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extension 'python'
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extensions ['python_setup_py']
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2) by extension 'python_setup_py'
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extensions ['ignore', 'ignore_ament_install']
+[1.560s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extension 'ignore'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extension 'ignore_ament_install'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extensions ['colcon_pkg']
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extension 'colcon_pkg'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extensions ['colcon_meta']
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extension 'colcon_meta'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extensions ['ros']
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extension 'ros'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extensions ['cmake', 'python']
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extension 'cmake'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extension 'python'
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extensions ['python_setup_py']
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(models/MJCF/go2/assets) by extension 'python_setup_py'
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extensions ['ignore', 'ignore_ament_install']
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extension 'ignore'
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extension 'ignore_ament_install'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extensions ['colcon_pkg']
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extension 'colcon_pkg'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extensions ['colcon_meta']
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extension 'colcon_meta'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extensions ['ros']
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extension 'ros'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extensions ['cmake', 'python']
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extension 'cmake'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extension 'python'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extensions ['python_setup_py']
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF) by extension 'python_setup_py'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF/go2_description) by extensions ['ignore', 'ignore_ament_install']
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF/go2_description) by extension 'ignore'
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(models/URDF/go2_description) ignored
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.566s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extensions ['ignore', 'ignore_ament_install']
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extension 'ignore'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extension 'ignore_ament_install'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extensions ['colcon_pkg']
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extension 'colcon_pkg'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extensions ['colcon_meta']
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extension 'colcon_meta'
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extensions ['ros']
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extension 'ros'
+[1.569s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extensions ['cmake', 'python']
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extension 'cmake'
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extension 'python'
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extensions ['python_setup_py']
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(src/Python_src) by extension 'python_setup_py'
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ignore', 'ignore_ament_install']
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore'
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore_ament_install'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_pkg']
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_pkg'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_meta']
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_meta'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ros']
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ros'
+[1.588s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller' with type 'ros.ament_python' and name 'controller'
+[1.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/convex_mpc) by extensions ['ignore', 'ignore_ament_install']
+[1.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/convex_mpc) by extension 'ignore'
+[1.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/convex_mpc) by extension 'ignore_ament_install'
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/convex_mpc) by extensions ['colcon_pkg']
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/convex_mpc) by extension 'colcon_pkg'
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/convex_mpc) by extensions ['colcon_meta']
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/convex_mpc) by extension 'colcon_meta'
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/convex_mpc) by extensions ['ros']
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/convex_mpc) by extension 'ros'
+[1.591s] DEBUG:colcon.colcon_core.package_identification:Package 'src/convex_mpc' with type 'ros.ament_python' and name 'convex_mpc'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'ignore'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'ignore_ament_install'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['colcon_pkg']
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'colcon_pkg'
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['colcon_meta']
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'colcon_meta'
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extensions ['ros']
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_interfaces) by extension 'ros'
+[1.595s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_interfaces' with type 'ros.ament_cmake' and name 'robot_interfaces'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation_py) by extensions ['ignore', 'ignore_ament_install']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation_py) by extension 'ignore'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation_py) by extension 'ignore_ament_install'
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation_py) by extensions ['colcon_pkg']
+[1.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation_py) by extension 'colcon_pkg'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation_py) by extensions ['colcon_meta']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation_py) by extension 'colcon_meta'
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation_py) by extensions ['ros']
+[1.597s] Level 1:colcon.colcon_core.package_identification:_identify(src/simulation_py) by extension 'ros'
+[1.600s] DEBUG:colcon.colcon_core.package_identification:Package 'src/simulation_py' with type 'ros.ament_python' and name 'simulation_py'
+[1.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.713s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.730s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 341 installed packages in /opt/ros/humble
+[1.737s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.940s] Level 5:colcon.colcon_core.verb:set package 'convex_mpc' build argument 'cmake_args' from command line to 'None'
+[1.940s] Level 5:colcon.colcon_core.verb:set package 'convex_mpc' build argument 'cmake_target' from command line to 'None'
+[1.940s] Level 5:colcon.colcon_core.verb:set package 'convex_mpc' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.940s] Level 5:colcon.colcon_core.verb:set package 'convex_mpc' build argument 'cmake_clean_cache' from command line to 'False'
+[1.940s] Level 5:colcon.colcon_core.verb:set package 'convex_mpc' build argument 'cmake_clean_first' from command line to 'False'
+[1.940s] Level 5:colcon.colcon_core.verb:set package 'convex_mpc' build argument 'cmake_force_configure' from command line to 'False'
+[1.940s] Level 5:colcon.colcon_core.verb:set package 'convex_mpc' build argument 'ament_cmake_args' from command line to 'None'
+[1.940s] Level 5:colcon.colcon_core.verb:set package 'convex_mpc' build argument 'catkin_cmake_args' from command line to 'None'
+[1.940s] Level 5:colcon.colcon_core.verb:set package 'convex_mpc' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.940s] DEBUG:colcon.colcon_core.verb:Building package 'convex_mpc' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc', 'merge_install': False, 'path': '/home/lukat/unitree_mujoco_ws/COGAR_project/src/convex_mpc', 'symlink_install': False, 'test_result_base': None}
+[1.941s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.941s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.941s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.941s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.941s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.941s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.941s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.941s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.942s] Level 5:colcon.colcon_core.verb:set package 'robot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.942s] DEBUG:colcon.colcon_core.verb:Building package 'robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces', 'merge_install': False, 'path': '/home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'simulation_py' build argument 'cmake_args' from command line to 'None'
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'simulation_py' build argument 'cmake_target' from command line to 'None'
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'simulation_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'simulation_py' build argument 'cmake_clean_cache' from command line to 'False'
+[1.944s] Level 5:colcon.colcon_core.verb:set package 'simulation_py' build argument 'cmake_clean_first' from command line to 'False'
+[1.944s] Level 5:colcon.colcon_core.verb:set package 'simulation_py' build argument 'cmake_force_configure' from command line to 'False'
+[1.944s] Level 5:colcon.colcon_core.verb:set package 'simulation_py' build argument 'ament_cmake_args' from command line to 'None'
+[1.944s] Level 5:colcon.colcon_core.verb:set package 'simulation_py' build argument 'catkin_cmake_args' from command line to 'None'
+[1.944s] Level 5:colcon.colcon_core.verb:set package 'simulation_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.944s] DEBUG:colcon.colcon_core.verb:Building package 'simulation_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py', 'merge_install': False, 'path': '/home/lukat/unitree_mujoco_ws/COGAR_project/src/simulation_py', 'symlink_install': False, 'test_result_base': None}
+[1.945s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_args' from command line to 'None'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target' from command line to 'None'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.947s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.947s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.947s] DEBUG:colcon.colcon_core.verb:Building package 'controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller', 'merge_install': False, 'path': '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller', 'symlink_install': False, 'test_result_base': None}
+[1.947s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.952s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.953s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces' with build type 'ament_cmake'
+[1.953s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces'
+[1.986s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.987s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.987s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.999s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/convex_mpc' with build type 'ament_python'
+[2.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('convex_mpc', 'ament_prefix_path')
+[2.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/hook/ament_prefix_path.ps1'
+[2.007s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/hook/ament_prefix_path.dsv'
+[2.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/hook/ament_prefix_path.sh'
+[2.015s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.015s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.024s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/simulation_py' with build type 'ament_python'
+[2.024s] Level 1:colcon.colcon_core.shell:create_environment_hook('simulation_py', 'ament_prefix_path')
+[2.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/hook/ament_prefix_path.ps1'
+[2.034s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/hook/ament_prefix_path.dsv'
+[2.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/hook/ament_prefix_path.sh'
+[2.037s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.037s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces
+[2.871s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/convex_mpc'
+[2.871s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.871s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.619s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/simulation_py'
+[3.620s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.621s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/convex_mpc': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/convex_mpc build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/install.log --single-version-externally-managed install_data
+[6.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/simulation_py': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simulation_py build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/install.log --single-version-externally-managed install_data
+[8.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/simulation_py' returned '0': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simulation_py build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/install.log --single-version-externally-managed install_data
+[8.825s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py' for CMake module files
+[8.827s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py' for CMake config files
+[8.829s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib'
+[8.830s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/bin'
+[8.830s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/pkgconfig/simulation_py.pc'
+[8.831s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages'
+[8.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('simulation_py', 'pythonpath')
+[8.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/hook/pythonpath.ps1'
+[8.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/hook/pythonpath.dsv'
+[8.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/hook/pythonpath.sh'
+[8.838s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/bin'
+[8.838s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(simulation_py)
+[8.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/package.ps1'
+[8.842s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/package.dsv'
+[8.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/package.sh'
+[8.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/package.bash'
+[8.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py/package.zsh'
+[8.855s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/colcon-core/packages/simulation_py)
+[8.861s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc' for CMake module files
+[8.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/convex_mpc' returned '0': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/convex_mpc build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/install.log --single-version-externally-managed install_data
+[8.864s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc' for CMake config files
+[8.865s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib'
+[8.865s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/bin'
+[8.866s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/pkgconfig/convex_mpc.pc'
+[8.867s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages'
+[8.868s] Level 1:colcon.colcon_core.shell:create_environment_hook('convex_mpc', 'pythonpath')
+[8.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/hook/pythonpath.ps1'
+[8.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/hook/pythonpath.dsv'
+[8.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/hook/pythonpath.sh'
+[8.877s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/bin'
+[8.877s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(convex_mpc)
+[8.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/package.ps1'
+[8.881s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/package.dsv'
+[8.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/package.sh'
+[8.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/package.bash'
+[8.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc/package.zsh'
+[8.893s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/colcon-core/packages/convex_mpc)
+[12.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces
+[12.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces -- -j8 -l8
+[28.859s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces -- -j8 -l8
+[28.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces
+[29.177s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_interfaces)
+[29.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces
+[29.179s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces' for CMake module files
+[29.181s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces' for CMake config files
+[29.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'cmake_prefix_path')
+[29.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.ps1'
+[29.185s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.dsv'
+[29.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.sh'
+[29.188s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib'
+[29.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'ld_library_path_lib')
+[29.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.ps1'
+[29.189s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.dsv'
+[29.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.sh'
+[29.193s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/bin'
+[29.193s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/pkgconfig/robot_interfaces.pc'
+[29.194s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/python3.10/site-packages'
+[29.195s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/bin'
+[29.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.ps1'
+[29.198s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.dsv'
+[29.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.sh'
+[29.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.bash'
+[29.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.zsh'
+[29.204s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/colcon-core/packages/robot_interfaces)
+[29.209s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_interfaces)
+[29.210s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces' for CMake module files
+[29.211s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces' for CMake config files
+[29.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'cmake_prefix_path')
+[29.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.ps1'
+[29.215s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.dsv'
+[29.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/cmake_prefix_path.sh'
+[29.219s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib'
+[29.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_interfaces', 'ld_library_path_lib')
+[29.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.ps1'
+[29.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.dsv'
+[29.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/hook/ld_library_path_lib.sh'
+[29.223s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/bin'
+[29.223s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/pkgconfig/robot_interfaces.pc'
+[29.224s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/python3.10/site-packages'
+[29.225s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/bin'
+[29.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.ps1'
+[29.227s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.dsv'
+[29.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.sh'
+[29.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.bash'
+[29.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.zsh'
+[29.233s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/colcon-core/packages/robot_interfaces)
+[29.234s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller' with build type 'ament_python'
+[29.235s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ament_prefix_path')
+[29.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/hook/ament_prefix_path.ps1'
+[29.243s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/hook/ament_prefix_path.dsv'
+[29.244s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/hook/ament_prefix_path.sh'
+[29.246s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[29.246s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[30.063s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller'
+[30.064s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[30.064s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[31.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller': AMENT_PREFIX_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces LD_LIBRARY_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages:/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log --single-version-externally-managed install_data
+[33.294s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller' for CMake module files
+[33.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller' returned '0': AMENT_PREFIX_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces LD_LIBRARY_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages:/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log --single-version-externally-managed install_data
+[33.297s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller' for CMake config files
+[33.298s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib'
+[33.298s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/bin'
+[33.298s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/pkgconfig/controller.pc'
+[33.299s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages'
+[33.299s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'pythonpath')
+[33.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/hook/pythonpath.ps1'
+[33.301s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/hook/pythonpath.dsv'
+[33.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/hook/pythonpath.sh'
+[33.305s] Level 1:colcon.colcon_core.environment:checking '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/bin'
+[33.305s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[33.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/package.ps1'
+[33.309s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/package.dsv'
+[33.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/package.sh'
+[33.313s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/package.bash'
+[33.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/package.zsh'
+[33.317s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/colcon-core/packages/controller)
+[33.320s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[33.320s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[33.321s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[33.321s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[33.413s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[33.413s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[33.413s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[33.413s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[33.416s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[33.417s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[33.418s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/local_setup.ps1'
+[33.421s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lukat/unitree_mujoco_ws/COGAR_project/install/_local_setup_util_ps1.py'
+[33.427s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/setup.ps1'
+[33.430s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/local_setup.sh'
+[33.433s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lukat/unitree_mujoco_ws/COGAR_project/install/_local_setup_util_sh.py'
+[33.434s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/setup.sh'
+[33.437s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/local_setup.bash'
+[33.439s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/setup.bash'
+[33.444s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/local_setup.zsh'
+[33.446s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lukat/unitree_mujoco_ws/COGAR_project/install/setup.zsh'

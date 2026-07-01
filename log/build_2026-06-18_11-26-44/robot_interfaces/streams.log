@@ -1,0 +1,352 @@
+[0.147s] Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces
+[1.682s] -- The C compiler identification is GNU 11.4.0
+[1.695s] -- The CXX compiler identification is GNU 11.4.0
+[2.042s] -- Detecting C compiler ABI info
+[2.446s] -- Detecting C compiler ABI info - done
+[2.480s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.482s] -- Detecting C compile features
+[2.485s] -- Detecting C compile features - done
+[2.502s] -- Detecting CXX compiler ABI info
+[2.852s] -- Detecting CXX compiler ABI info - done
+[2.875s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.876s] -- Detecting CXX compile features
+[2.878s] -- Detecting CXX compile features - done
+[2.933s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.386s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.764s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.786s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.831s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.234s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.444s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[6.803s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[7.594s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.543s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.715s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[8.722s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[9.163s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[9.164s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.165s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[9.165s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[9.241s] -- Found PythonExtra: .so  
+[9.687s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.788s] -- Added test 'lint_cmake' to check CMake code style
+[9.797s] -- Added test 'xmllint' to check XML markup files
+[9.811s] -- Configuring done
+[10.020s] -- Generating done
+[10.067s] -- Build files have been written to: /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces
+[10.094s] Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lukat/unitree_mujoco_ws/COGAR_project/src/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces
+[10.102s] Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces -- -j8 -l8
+[10.223s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[10.258s] [  3%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[10.270s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[10.281s] [  5%] Built target ament_cmake_python_copy_robot_interfaces
+[11.133s] running egg_info
+[11.210s] creating robot_interfaces.egg-info
+[11.212s] writing robot_interfaces.egg-info/PKG-INFO
+[11.213s] writing dependency_links to robot_interfaces.egg-info/dependency_links.txt
+[11.215s] writing top-level names to robot_interfaces.egg-info/top_level.txt
+[11.215s] writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'
+[11.490s] reading manifest file 'robot_interfaces.egg-info/SOURCES.txt'
+[11.494s] writing manifest file 'robot_interfaces.egg-info/SOURCES.txt'
+[11.606s] [  5%] Built target robot_interfaces__rs
+[11.609s] [  5%] Built target ament_cmake_python_build_robot_interfaces_egg
+[12.416s] [  7%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/msg/detail/robot_state__functions.c.o[0m
+[12.416s] [  8%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/update_single_param__functions.c.o[0m
+[12.416s] [ 10%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/update_gait_params__functions.c.o[0m
+[12.420s] [ 12%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/robot_interfaces/srv/detail/set_body_height__functions.c.o[0m
+[12.439s] [ 12%] Built target robot_interfaces__cpp
+[12.469s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[12.470s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[12.478s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[13.269s] [ 19%] [32m[1mLinking C shared library librobot_interfaces__rosidl_generator_c.so[0m
+[13.524s] [ 19%] Built target robot_interfaces__rosidl_generator_c
+[13.563s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[13.568s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.572s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.748s] [ 26%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/update_single_param__type_support.cpp.o[0m
+[14.752s] [ 28%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/msg/robot_state__type_support.cpp.o[0m
+[14.753s] [ 30%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/update_gait_params__type_support.cpp.o[0m
+[15.162s] [ 32%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/msg/detail/robot_state__type_support.cpp.o[0m
+[15.844s] [ 33%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/msg/detail/dds_fastrtps/robot_state__type_support.cpp.o[0m
+[15.922s] [ 35%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/msg/robot_state__type_support.cpp.o[0m
+[16.108s] [ 37%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/update_gait_params__type_support.cpp.o[0m
+[16.248s] [ 39%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/update_single_param__type_support.cpp.o[0m
+[16.375s] [ 41%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/msg/detail/robot_state__type_support.c.o[0m
+[16.423s] [ 42%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_interfaces/srv/set_body_height__type_support.cpp.o[0m
+[16.565s] [ 44%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_c.so[0m
+[16.575s] [ 46%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/msg/detail/robot_state__type_support_c.cpp.o[0m
+[16.667s] [ 48%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/update_gait_params__type_support.c.o[0m
+[16.952s] [ 50%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/update_single_param__type_support.c.o[0m
+[16.968s] [ 51%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/update_gait_params__type_support.cpp.o[0m
+[17.019s] [ 53%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/update_gait_params__type_support.cpp.o[0m
+[17.038s] [ 53%] Built target robot_interfaces__rosidl_typesupport_c
+[17.082s] [ 55%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_interfaces/srv/set_body_height__type_support.cpp.o[0m
+[17.083s] [ 57%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_interfaces/srv/detail/set_body_height__type_support.c.o[0m
+[17.165s] [ 58%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/update_gait_params__type_support_c.cpp.o[0m
+[17.279s] [ 60%] [32m[1mLinking C shared library librobot_interfaces__rosidl_typesupport_introspection_c.so[0m
+[17.507s] [ 60%] Built target robot_interfaces__rosidl_typesupport_introspection_c
+[17.552s] [ 62%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/update_single_param__type_support.cpp.o[0m
+[17.783s] [ 64%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_interfaces/srv/detail/set_body_height__type_support.cpp.o[0m
+[19.056s] [ 66%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/update_single_param__type_support_c.cpp.o[0m
+[19.065s] [ 67%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_interfaces/srv/detail/set_body_height__type_support_c.cpp.o[0m
+[19.346s] [ 69%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_cpp.so[0m
+[19.828s] [ 69%] Built target robot_interfaces__rosidl_typesupport_cpp
+[19.909s] [ 71%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/update_single_param__type_support.cpp.o[0m
+[20.030s] [ 73%] [32mBuilding CXX object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_interfaces/srv/detail/dds_fastrtps/set_body_height__type_support.cpp.o[0m
+[20.917s] [ 75%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[21.501s] [ 75%] Built target robot_interfaces__rosidl_typesupport_introspection_cpp
+[21.587s] [ 76%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[21.976s] [ 76%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c
+[22.221s] [ 78%] [32m[1mLinking CXX shared library librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[22.545s] [ 78%] Built target robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[22.608s] [ 78%] Built target robot_interfaces
+[22.665s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[25.410s] [ 80%] Built target robot_interfaces__py
+[25.463s] [ 82%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_update_single_param_s.c.o[0m
+[25.464s] [ 83%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_update_gait_params_s.c.o[0m
+[25.467s] [ 87%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/msg/_robot_state_s.c.o[0m
+[25.467s] [ 87%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/robot_interfaces/srv/_set_body_height_s.c.o[0m
+[26.013s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/robot_interfaces/librobot_interfaces__rosidl_generator_py.so[0m
+[26.180s] [ 89%] Built target robot_interfaces__rosidl_generator_py
+[26.228s] [ 91%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[26.231s] [ 94%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[26.231s] [ 94%] [32mBuilding C object CMakeFiles/robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[26.647s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.661s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.666s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[26.858s] [100%] Built target robot_interfaces__rosidl_typesupport_c__pyext
+[26.869s] [100%] Built target robot_interfaces__rosidl_typesupport_introspection_c__pyext
+[26.873s] [100%] Built target robot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[26.904s] Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces -- -j8 -l8
+[26.930s] Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces
+[26.949s] -- Install configuration: ""
+[26.956s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/robot_interfaces
+[26.957s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[26.961s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[26.962s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/update_gait_params.h
+[26.962s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/set_body_height.h
+[26.963s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/update_single_param.h
+[26.963s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[26.965s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__struct.h
+[26.966s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__struct.h
+[26.966s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__functions.h
+[26.967s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__type_support.h
+[26.968s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__type_support.h
+[26.968s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__functions.c
+[26.969s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__functions.c
+[26.969s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__struct.h
+[26.969s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__functions.c
+[26.969s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__type_support.h
+[26.970s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__functions.h
+[26.970s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__functions.h
+[26.971s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[26.971s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/robot_state.h
+[26.972s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[26.973s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[26.973s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__struct.h
+[26.973s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__functions.c
+[26.973s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__type_support.h
+[26.973s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__functions.h
+[26.975s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/library_path.sh
+[26.976s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/library_path.dsv
+[26.977s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so
+[26.979s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_c.so" to ""
+[26.979s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[26.981s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[26.981s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[26.982s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__rosidl_typesupport_fastrtps_c.h
+[26.982s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__rosidl_typesupport_fastrtps_c.h
+[26.982s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__rosidl_typesupport_fastrtps_c.h
+[26.983s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[26.984s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[26.984s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[26.984s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__rosidl_typesupport_fastrtps_c.h
+[26.985s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so
+[26.986s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[26.986s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[26.987s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[26.988s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[26.988s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__rosidl_typesupport_introspection_c.h
+[26.989s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__rosidl_typesupport_introspection_c.h
+[26.989s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__type_support.c
+[26.990s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__type_support.c
+[26.990s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__type_support.c
+[26.990s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__rosidl_typesupport_introspection_c.h
+[26.990s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[26.991s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[26.991s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[26.991s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__rosidl_typesupport_introspection_c.h
+[26.991s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__type_support.c
+[26.992s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so
+[26.993s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[26.993s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so
+[26.994s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_c.so" to ""
+[26.994s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[26.995s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[26.996s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/update_gait_params.hpp
+[26.997s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/set_body_height.hpp
+[26.997s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[26.998s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__type_support.hpp
+[26.998s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__struct.hpp
+[26.999s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__builder.hpp
+[26.999s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__struct.hpp
+[27.000s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__traits.hpp
+[27.001s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__type_support.hpp
+[27.001s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__type_support.hpp
+[27.001s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__builder.hpp
+[27.002s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__struct.hpp
+[27.002s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__traits.hpp
+[27.003s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__builder.hpp
+[27.003s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__traits.hpp
+[27.004s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/update_single_param.hpp
+[27.004s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[27.005s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/robot_state.hpp
+[27.005s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[27.006s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__struct.hpp
+[27.006s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__builder.hpp
+[27.007s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__type_support.hpp
+[27.007s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__traits.hpp
+[27.008s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[27.008s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[27.009s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[27.009s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[27.009s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__rosidl_typesupport_fastrtps_cpp.hpp
+[27.009s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__rosidl_typesupport_fastrtps_cpp.hpp
+[27.009s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/dds_fastrtps
+[27.010s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__rosidl_typesupport_fastrtps_cpp.hpp
+[27.010s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[27.010s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[27.011s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/dds_fastrtps
+[27.012s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__rosidl_typesupport_fastrtps_cpp.hpp
+[27.012s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[27.013s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[27.013s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[27.014s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces
+[27.014s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv
+[27.015s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail
+[27.015s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__type_support.cpp
+[27.016s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__type_support.cpp
+[27.016s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_gait_params__rosidl_typesupport_introspection_cpp.hpp
+[27.016s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/set_body_height__rosidl_typesupport_introspection_cpp.hpp
+[27.017s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__type_support.cpp
+[27.017s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/srv/detail/update_single_param__rosidl_typesupport_introspection_cpp.hpp
+[27.018s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg
+[27.018s] -- Up-to-date: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail
+[27.018s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__type_support.cpp
+[27.018s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/include/robot_interfaces/robot_interfaces/msg/detail/robot_state__rosidl_typesupport_introspection_cpp.hpp
+[27.018s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so
+[27.018s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[27.018s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so
+[27.018s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_typesupport_cpp.so" to ""
+[27.018s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.sh
+[27.019s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/pythonpath.dsv
+[27.019s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info
+[27.021s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[27.022s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[27.022s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[27.022s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[27.023s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces
+[27.024s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[27.024s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/librobot_interfaces__rosidl_generator_py.so
+[27.025s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[27.026s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv
+[27.027s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_single_param_s.c
+[27.027s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_set_body_height_s.c
+[27.028s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_single_param.py
+[27.029s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/__init__.py
+[27.030s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_gait_params_s.c
+[27.030s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_gait_params.py
+[27.031s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_set_body_height.py
+[27.032s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[27.032s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py
+[27.033s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg
+[27.035s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_robot_state_s.c
+[27.035s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py
+[27.037s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_robot_state.py
+[27.037s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[27.038s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[27.038s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/_robot_interfaces_s.ep.rosidl_typesupport_c.c
+[27.157s] Listing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces'...
+[27.157s] Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/__init__.py'...
+[27.157s] Listing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg'...
+[27.157s] Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/__init__.py'...
+[27.157s] Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/msg/_robot_state.py'...
+[27.158s] Listing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv'...
+[27.158s] Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/__init__.py'...
+[27.158s] Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_set_body_height.py'...
+[27.158s] Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_gait_params.py'...
+[27.158s] Compiling '/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/srv/_update_single_param.py'...
+[27.171s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[27.172s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[27.173s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[27.173s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[27.173s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[27.174s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages/robot_interfaces/robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[27.174s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so
+[27.175s] -- Set runtime path of "/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib/librobot_interfaces__rosidl_generator_py.so" to ""
+[27.176s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/rust_packages/robot_interfaces
+[27.177s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust
+[27.178s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/Cargo.toml
+[27.179s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src
+[27.179s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/msg.rs
+[27.180s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/srv.rs
+[27.180s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/srv
+[27.182s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/srv/rmw.rs
+[27.184s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/msg
+[27.184s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/msg/rmw.rs
+[27.184s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/src/lib.rs
+[27.185s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/rust/build.rs
+[27.186s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/msg/RobotState.idl
+[27.188s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateGaitParams.idl
+[27.189s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateSingleParam.idl
+[27.189s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/SetBodyHeight.idl
+[27.190s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/msg/RobotState.msg
+[27.191s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateGaitParams.srv
+[27.191s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateGaitParams_Request.msg
+[27.192s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateGaitParams_Response.msg
+[27.193s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateSingleParam.srv
+[27.193s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateSingleParam_Request.msg
+[27.194s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/UpdateSingleParam_Response.msg
+[27.194s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/SetBodyHeight.srv
+[27.195s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/SetBodyHeight_Request.msg
+[27.196s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/srv/SetBodyHeight_Response.msg
+[27.197s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/package_run_dependencies/robot_interfaces
+[27.198s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/parent_prefix_path/robot_interfaces
+[27.198s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.sh
+[27.198s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/ament_prefix_path.dsv
+[27.199s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/path.sh
+[27.200s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/environment/path.dsv
+[27.200s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/local_setup.bash
+[27.201s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/local_setup.sh
+[27.201s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/local_setup.zsh
+[27.201s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/local_setup.dsv
+[27.202s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.dsv
+[27.202s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/ament_index/resource_index/packages/robot_interfaces
+[27.205s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport.cmake
+[27.205s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[27.206s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[27.206s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[27.207s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[27.207s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[27.208s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport.cmake
+[27.208s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[27.209s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_cppExport.cmake
+[27.209s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[27.210s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[27.210s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[27.211s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[27.211s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport.cmake
+[27.212s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[27.213s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport.cmake
+[27.213s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/export_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[27.214s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake-extras.cmake
+[27.215s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[27.215s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[27.216s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[27.216s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[27.217s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[27.217s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[27.218s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig.cmake
+[27.218s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/cmake/robot_interfacesConfig-version.cmake
+[27.218s] -- Installing: /home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/share/robot_interfaces/package.xml
+[27.223s] Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lukat/unitree_mujoco_ws/COGAR_project/build/robot_interfaces

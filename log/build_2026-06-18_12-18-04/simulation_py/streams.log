@@ -1,0 +1,27 @@
+[2.055s] Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/simulation_py': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simulation_py build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/install.log --single-version-externally-managed install_data
+[2.519s] running egg_info
+[2.549s] writing ../../build/simulation_py/simulation_py.egg-info/PKG-INFO
+[2.550s] writing dependency_links to ../../build/simulation_py/simulation_py.egg-info/dependency_links.txt
+[2.550s] writing entry points to ../../build/simulation_py/simulation_py.egg-info/entry_points.txt
+[2.551s] writing requirements to ../../build/simulation_py/simulation_py.egg-info/requires.txt
+[2.551s] writing top-level names to ../../build/simulation_py/simulation_py.egg-info/top_level.txt
+[2.622s] reading manifest file '../../build/simulation_py/simulation_py.egg-info/SOURCES.txt'
+[2.626s] writing manifest file '../../build/simulation_py/simulation_py.egg-info/SOURCES.txt'
+[2.626s] running build
+[2.626s] running build_py
+[2.626s] copying simulation_py/simulation_node.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build/lib/simulation_py
+[2.627s] copying simulation_py/__init__.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build/lib/simulation_py
+[2.628s] running install
+[2.633s] running install_lib
+[2.655s] copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build/lib/simulation_py/simulation_node.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py
+[2.658s] byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py/simulation_node.py to simulation_node.cpython-310.pyc
+[2.662s] running install_data
+[2.663s] copying resource/simulation_py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/ament_index/resource_index/packages
+[2.664s] copying package.xml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/share/simulation_py
+[2.665s] running install_egg_info
+[2.690s] removing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py-0.0.0-py3.10.egg-info' (and everything under it)
+[2.691s] Copying ../../build/simulation_py/simulation_py.egg-info to /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py-0.0.0-py3.10.egg-info
+[2.698s] running install_scripts
+[2.899s] Installing simulation_node script to /home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/simulation_py
+[2.900s] writing list of installed files to '/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/install.log'
+[2.974s] Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/simulation_py' returned '0': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simulation_py build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/simulation_py/install.log --single-version-externally-managed install_data

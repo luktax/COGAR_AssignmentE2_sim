@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing convex_mpc.egg-info/PKG-INFO
+writing dependency_links to convex_mpc.egg-info/dependency_links.txt
+writing entry points to convex_mpc.egg-info/entry_points.txt
+writing requirements to convex_mpc.egg-info/requires.txt
+writing top-level names to convex_mpc.egg-info/top_level.txt
+reading manifest file 'convex_mpc.egg-info/SOURCES.txt'
+writing manifest file 'convex_mpc.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex-mpc.egg-link (link to .)
+
+Installed /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc
+running symlink_data
+symbolically linking /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/resource/convex_mpc -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/ament_index/resource_index/packages
+symbolically linking /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/package.xml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc

@@ -1,0 +1,22 @@
+[2.449s] Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller': AMENT_PREFIX_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces CONDA_PROMPT_MODIFIER=(go2-convex-mpc) LD_LIBRARY_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages:/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log --single-version-externally-managed install_data
+[3.467s] running egg_info
+[3.470s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[3.472s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[3.473s] writing entry points to ../../build/controller/controller.egg-info/entry_points.txt
+[3.475s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[3.477s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[3.483s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[3.486s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[3.487s] running build
+[3.487s] running build_py
+[3.489s] running install
+[3.490s] running install_lib
+[3.493s] running install_data
+[3.494s] running install_egg_info
+[3.500s] removing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[3.508s] Copying ../../build/controller/controller.egg-info to /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[3.514s] running install_scripts
+[3.567s] Installing controller_node script to /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/controller
+[3.568s] Installing rl_controller script to /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/controller
+[3.569s] writing list of installed files to '/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log'
+[3.653s] Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller' returned '0': AMENT_PREFIX_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces CONDA_PROMPT_MODIFIER=(go2-convex-mpc) LD_LIBRARY_PATH=/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages:/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log --single-version-externally-managed install_data

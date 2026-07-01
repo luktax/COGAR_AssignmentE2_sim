@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.003568] (-) JobUnselected: {'identifier': 'controller'}
+[0.004101] (-) JobUnselected: {'identifier': 'robot_interfaces'}
+[0.004235] (-) JobUnselected: {'identifier': 'simulation_py'}
+[0.004348] (convex_mpc) JobQueued: {'identifier': 'convex_mpc', 'dependencies': OrderedDict()}
+[0.004489] (convex_mpc) JobStarted: {'identifier': 'convex_mpc'}
+[0.095694] (-) TimerEvent: {}
+[0.196462] (-) TimerEvent: {}
+[0.297217] (-) TimerEvent: {}
+[0.398059] (-) TimerEvent: {}
+[0.498728] (-) TimerEvent: {}
+[0.599328] (-) TimerEvent: {}
+[0.699984] (-) TimerEvent: {}
+[0.800584] (-) TimerEvent: {}
+[0.901198] (-) TimerEvent: {}
+[1.002747] (-) TimerEvent: {}
+[1.103338] (-) TimerEvent: {}
+[1.203934] (-) TimerEvent: {}
+[1.304493] (-) TimerEvent: {}
+[1.405211] (-) TimerEvent: {}
+[1.505834] (-) TimerEvent: {}
+[1.606605] (-) TimerEvent: {}
+[1.707370] (-) TimerEvent: {}
+[1.808034] (-) TimerEvent: {}
+[1.908720] (-) TimerEvent: {}
+[2.009323] (-) TimerEvent: {}
+[2.110025] (-) TimerEvent: {}
+[2.210770] (-) TimerEvent: {}
+[2.311535] (-) TimerEvent: {}
+[2.412357] (-) TimerEvent: {}
+[2.513266] (-) TimerEvent: {}
+[2.614132] (-) TimerEvent: {}
+[2.714960] (-) TimerEvent: {}
+[2.815688] (-) TimerEvent: {}
+[2.916340] (-) TimerEvent: {}
+[3.017038] (-) TimerEvent: {}
+[3.117726] (-) TimerEvent: {}
+[3.218465] (-) TimerEvent: {}
+[3.319183] (-) TimerEvent: {}
+[3.419895] (-) TimerEvent: {}
+[3.520665] (-) TimerEvent: {}
+[3.621921] (-) TimerEvent: {}
+[3.623107] (convex_mpc) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(go2-convex-mpc)', 'USER': 'lukat', 'GIT_ASKPASS': '/home/lukat/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lukat/COGAR_ws/install/go2_stair_interfaces/lib:/home/lukat/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/lukat/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/lukat', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/lukat/unitree_mujoco_ws/COGAR_project', 'TERM_PROGRAM_VERSION': '1.125.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-cadc8dda-8380-49a7-881a-a7aee572af3a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/lukat/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/lukat/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'PYTHONNOUSERSITE': '1', '_CONDA_ROOT': '/home/lukat/miniconda3', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lukat/COGAR_ws/install:/home/lukat/unitree_ros2/cyclonedds_ws/install:/home/lukat/unitree_mujoco_ws/COGAR_project/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lukat', 'NAME': 'HP-EliteBook', 'WSL_INTEROP': '/run/WSL/440_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/lukat/miniconda3/envs/go2-convex-mpc/bin:/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/lukat/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/lukat/.vscode-server/bin/fcf604774b9f2674b473065736ee75077e256353/bin/remote-cli:/home/lukat/.local/bin:/home/lukat/miniconda3/condabin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Users/lukat/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lukat/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7373f45496.sock', 'TERM_PROGRAM': 'vscode', 'XML_CATALOG_FILES': 'file:///home/lukat/miniconda3/envs/go2-convex-mpc/etc/xml/catalog file:///etc/xml/catalog', 'GSETTINGS_SCHEMA_DIR': '/home/lukat/miniconda3/envs/go2-convex-mpc/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/lukat/COGAR_ws/install/go2_velocity_supervisor:/home/lukat/COGAR_ws/install/go2_state_bridge:/home/lukat/COGAR_ws/install/go2_safety_monitor:/home/lukat/COGAR_ws/install/go2_stair_interfaces:/home/lukat/COGAR_ws/install/go2_sport_cmd_bridge:/home/lukat/COGAR_ws/install/go2_simulation_mujoco:/home/lukat/COGAR_ws/install/go2_keyboard_cmd:/home/lukat/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/lukat/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py:/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller:/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/lukat/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'go2-convex-mpc', '_CONDA_EXE': '/home/lukat/miniconda3/bin/conda', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc', 'COPILOT_DEBUG_NONCE': '3cae775b8b8024844ec3212e9461dcaf', 'CONDA_EXE': '/home/lukat/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages:/home/lukat/COGAR_ws/install/go2_velocity_supervisor/lib/python3.10/site-packages:/home/lukat/COGAR_ws/install/go2_state_bridge/lib/python3.10/site-packages:/home/lukat/COGAR_ws/install/go2_safety_monitor/lib/python3.10/site-packages:/home/lukat/COGAR_ws/install/go2_stair_interfaces/local/lib/python3.10/dist-packages:/home/lukat/COGAR_ws/install/go2_sport_cmd_bridge/lib/python3.10/site-packages:/home/lukat/COGAR_ws/install/go2_simulation_mujoco/lib/python3.10/site-packages:/home/lukat/COGAR_ws/install/go2_keyboard_cmd/lib/python3.10/site-packages:/home/lukat/unitree_ros2/cyclonedds_ws/install/unitree_go/local/lib/python3.10/dist-packages:/home/lukat/unitree_ros2/cyclonedds_ws/install/unitree_api/local/lib/python3.10/dist-packages:/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages:/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages:/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/lukat/miniconda3/envs/go2-convex-mpc', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/lukat/COGAR_ws/install/go2_stair_interfaces:/home/lukat/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/lukat/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/lukat/unitree_mujoco_ws/COGAR_project/install/robot_interfaces', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[3.722241] (-) TimerEvent: {}
+[3.822852] (-) TimerEvent: {}
+[3.923569] (-) TimerEvent: {}
+[4.024321] (-) TimerEvent: {}
+[4.125198] (-) TimerEvent: {}
+[4.226018] (-) TimerEvent: {}
+[4.326839] (-) TimerEvent: {}
+[4.427513] (-) TimerEvent: {}
+[4.477598] (convex_mpc) StdoutLine: {'line': b'running develop\n'}
+[4.527850] (-) TimerEvent: {}
+[4.628725] (-) TimerEvent: {}
+[4.729539] (-) TimerEvent: {}
+[4.830512] (-) TimerEvent: {}
+[4.898804] (convex_mpc) StdoutLine: {'line': b'running egg_info\n'}
+[4.899775] (convex_mpc) StdoutLine: {'line': b'writing convex_mpc.egg-info/PKG-INFO\n'}
+[4.903010] (convex_mpc) StdoutLine: {'line': b'writing dependency_links to convex_mpc.egg-info/dependency_links.txt\n'}
+[4.904531] (convex_mpc) StdoutLine: {'line': b'writing entry points to convex_mpc.egg-info/entry_points.txt\n'}
+[4.906003] (convex_mpc) StdoutLine: {'line': b'writing requirements to convex_mpc.egg-info/requires.txt\n'}
+[4.906556] (convex_mpc) StdoutLine: {'line': b'writing top-level names to convex_mpc.egg-info/top_level.txt\n'}
+[4.910618] (convex_mpc) StdoutLine: {'line': b"reading manifest file 'convex_mpc.egg-info/SOURCES.txt'\n"}
+[4.912977] (convex_mpc) StdoutLine: {'line': b"writing manifest file 'convex_mpc.egg-info/SOURCES.txt'\n"}
+[4.916647] (convex_mpc) StdoutLine: {'line': b'running build_ext\n'}
+[4.917391] (convex_mpc) StdoutLine: {'line': b'Creating /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex-mpc.egg-link (link to .)\n'}
+[4.918878] (convex_mpc) StdoutLine: {'line': b'\n'}
+[4.919143] (convex_mpc) StdoutLine: {'line': b'Installed /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc\n'}
+[4.919352] (convex_mpc) StdoutLine: {'line': b'running symlink_data\n'}
+[4.919738] (convex_mpc) StdoutLine: {'line': b'symbolically linking /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/resource/convex_mpc -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/ament_index/resource_index/packages\n'}
+[4.921290] (convex_mpc) StdoutLine: {'line': b'symbolically linking /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/package.xml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc\n'}
+[4.930823] (-) TimerEvent: {}
+[4.997760] (convex_mpc) CommandEnded: {'returncode': 0}
+[5.031175] (-) TimerEvent: {}
+[5.124519] (convex_mpc) JobEnded: {'identifier': 'convex_mpc', 'rc': 0}
+[5.130326] (-) EventReactorShutdown: {}

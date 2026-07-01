@@ -1,0 +1,34 @@
+[1.833s] Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log --single-version-externally-managed install_data
+[2.538s] running egg_info
+[2.565s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[2.567s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[2.568s] writing entry points to ../../build/controller/controller.egg-info/entry_points.txt
+[2.569s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[2.569s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[2.623s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[2.625s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[2.626s] running build
+[2.626s] running build_py
+[2.626s] copying controller/convex_mpc_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller
+[2.627s] copying controller/rl_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller
+[2.628s] copying controller/__init__.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller
+[2.629s] copying controller/load_policy.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller
+[2.630s] running install
+[2.636s] running install_lib
+[2.661s] copying /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build/lib/controller/convex_mpc_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller
+[2.662s] byte-compiling /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller/convex_mpc_controller.py to convex_mpc_controller.cpython-310.pyc
+[2.666s] running install_data
+[2.666s] copying resource/controller -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/ament_index/resource_index/packages
+[2.667s] copying package.xml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller
+[2.667s] copying policies/HIM_policy.pt -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/policies
+[2.670s] copying policies/kp_kd_random_policy.pt -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/policies
+[2.672s] copying policies/policy_with_45_obs.pt -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/policies
+[2.675s] copying config/go2.yaml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/share/controller/config
+[2.675s] running install_egg_info
+[2.702s] removing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[2.703s] Copying ../../build/controller/controller.egg-info to /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[2.706s] running install_scripts
+[2.883s] Installing controller_node script to /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/controller
+[2.883s] Installing rl_controller script to /home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/controller
+[2.884s] writing list of installed files to '/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log'
+[2.934s] Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/controller' returned '0': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/controller/install.log --single-version-externally-managed install_data

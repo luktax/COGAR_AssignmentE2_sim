@@ -1,0 +1,29 @@
+[4.279s] Invoking command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/convex_mpc': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/convex_mpc build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/install.log --single-version-externally-managed install_data
+[5.501s] running egg_info
+[5.563s] writing ../../build/convex_mpc/convex_mpc.egg-info/PKG-INFO
+[5.566s] writing dependency_links to ../../build/convex_mpc/convex_mpc.egg-info/dependency_links.txt
+[5.567s] writing requirements to ../../build/convex_mpc/convex_mpc.egg-info/requires.txt
+[5.568s] writing top-level names to ../../build/convex_mpc/convex_mpc.egg-info/top_level.txt
+[5.712s] reading manifest file '../../build/convex_mpc/convex_mpc.egg-info/SOURCES.txt'
+[5.717s] writing manifest file '../../build/convex_mpc/convex_mpc.egg-info/SOURCES.txt'
+[5.718s] running build
+[5.718s] running build_py
+[5.719s] copying convex_mpc/com_trajectory.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc
+[5.725s] copying convex_mpc/centroidal_mpc.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc
+[5.728s] copying convex_mpc/leg_controller.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc
+[5.731s] copying convex_mpc/gait.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc
+[5.733s] copying convex_mpc/__init__.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc
+[5.733s] copying convex_mpc/mujoco_model.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc
+[5.736s] copying convex_mpc/go2_robot_data.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc
+[5.738s] copying convex_mpc/plot_helper.py -> /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build/lib/convex_mpc
+[5.740s] running install
+[5.754s] running install_lib
+[5.823s] running install_data
+[5.824s] copying resource/convex_mpc -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/ament_index/resource_index/packages
+[5.825s] copying package.xml -> /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/share/convex_mpc
+[5.826s] running install_egg_info
+[5.904s] removing '/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc-0.0.0-py3.10.egg-info' (and everything under it)
+[5.908s] Copying ../../build/convex_mpc/convex_mpc.egg-info to /home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages/convex_mpc-0.0.0-py3.10.egg-info
+[5.915s] running install_scripts
+[6.505s] writing list of installed files to '/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/install.log'
+[6.616s] Invoked command in '/home/lukat/unitree_mujoco_ws/COGAR_project/src/convex_mpc' returned '0': PYTHONPATH=/home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lukat/unitree_mujoco_ws/COGAR_project/install/convex_mpc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/convex_mpc build --build-base /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/build install --record /home/lukat/unitree_mujoco_ws/COGAR_project/build/convex_mpc/install.log --single-version-externally-managed install_data

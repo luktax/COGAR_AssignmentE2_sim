@@ -17,7 +17,7 @@ while current.name != "COGAR_project":
     current = current.parent
 
 REPO = current
-XML_PATH = REPO / "models" / "MJCF" / "go2" / "stair_world.xml"
+XML_PATH = REPO / "models" / "MJCF" / "go2" / "flat_world.xml"
 
 print(XML_PATH)
 

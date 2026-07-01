@@ -1,5 +1,0 @@
-  File "/home/lukat/unitree_mujoco_ws/COGAR_project/install/simulation_py/lib/python3.10/site-packages/simulation_py/simulation_node.py", line 111
-    if self.torque_received_counter = self.ready_threshold:
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-SyntaxError: cannot assign to attribute here. Maybe you meant '==' instead of '='?
-
