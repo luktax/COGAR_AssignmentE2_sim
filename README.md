@@ -1,22 +1,119 @@
-Subgroup E2: Go2 Stair Climbing and Body Stabilization
+# COGAR Assignment E2 SIM - Go2 Convex MPC Simulation
 
-Assignment 11: Go2 Stair Ascent/Descent with Trunk Stabilization (SIMULATION) + (REAL ROBOT)
-Student id: 8775559
+This repository contains the simulation part of the COGAR Assignment E2 project: **Go2 Stair Ascent/Descent with Trunk Stabilization**.
+
+The repository includes a MuJoCo simulation of the Unitree Go2 robot, a Convex MPC locomotion controller, ROS 2 interfaces for online simulation, and offline scripts used to run parameter sweeps and stair-climbing experiments.
+
+## Repository content
+
+Main folders:
+
+- models: MuJoCo and URDF models of the Go2 robot and test environments.
+- src/convex_mpc: Convex MPC, gait generation, trajectory generation, leg controller and robot model utilities.
+- src/controller: ROS 2 controller node that receives robot state and publishes joint torques.
+- src/simulation_py: ROS 2 MuJoCo simulation node.
+- src/robot_interfaces: custom ROS 2 messages and services.
+- src/experiments: offline simulation experiments and parameter sweeps.
+- results: output folder for experiment logs and plots.
+
+## Important note about the online simulation
+
+The ROS 2 online simulation is included in this repository, but it is **not considered reliable for final experiments**.
+
+The online architecture was designed as:
+
+MuJoCo Simulation Node
+    |
+    | /robot_state
+    v
+MPC Controller Node
+    |
+    | /joint_torques
+    v
+MuJoCo Simulation Node
 
 
-What to do: Develop and evaluate a locomotion behavior for the Unitree Go2 robot to safely climb up and down emergency stairs, while maintaining the robot trunk/back as level and stable as possible.
-1) Set up and validate Go2 locomotion control for structured stair environments.
-2) Define safe test protocols for emergency staircases.
-3) Develop stair ascent and descent behaviors for the Go2.
-4) Use onboard sensing and robot state feedback to detect step transitions and body inclination.
-5) Implement trunk stabilization control to keep the robot back as horizontal and balanced as possible during stair traversal.
-6) Evaluate performance during: stair ascent, stair descent, different speeds, repeated trials
-7) Measure: stair traversal success rate, slip or failure events, body pitch/roll variation and stability during step transitions
+### Install Python dependencies:
 
-Software needed: ROS2 Humble, Go2 SDK, Python, state estimation and logging tools
-Research needed: Quadruped stair climbing, trunk stabilization in legged robots, locomotion over structured terrain, safety procedures for real-robot stair experiments
-Deliverables: Go2 stair locomotion pipeline, trunk stabilization controller, experimental evaluation report, demo videos
+pip3 install numpy==1.26.4 scipy matplotlib casadi mujoco pin torch pyyaml
 
-# Starting repos:
-- https://github.com/Unitree-Go2-Robot/go2_robot for additional interfaces, visualization, and SLAM/Nav2 integration
-- https://github.com/unitreerobotics/unitree_ros2 for official SDK with direct DDS communication, low-level control, and sport mode
+
+## Run a single offline experiment
+
+The single-step offline experiment runs one MuJoCo trial without ROS 2 online communication.
+
+cd ~/COGAR_project
+
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+
+python3 src/experiments/offline_single_step_experiment.py
+
+
+## Run systematic offline parameter sweeps
+
+The main script for systematic experiments is:
+
+src/experiments/flat_param_sweep.py
+
+Available sweeps:
+
+body_height
+velocity
+swing_height
+gait_hz
+duty
+pitch
+step_height
+
+Example:
+python3 src/experiments/flat_param_sweep.py --sweep body_height
+
+
+use --viewer to see the simulation on MuJoCo during the experiments
+
+use --show to see the plots at the end of the experiments
+
+
+
+## Run the online ROS 2 simulation
+
+### Terminal 1 - Start the MuJoCo simulation node
+cd ~/COGAR_project
+
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+
+ros2 run simulation_py simulation_node
+
+### Terminal 2 - Start the MPC controller node
+cd ~/COGAR_project
+
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+
+ros2 run controller controller_node
+
+### Terminal 3 - Send a velocity command
+source /opt/ros/humble/setup.bash
+source ~/COGAR_project/install/setup.bash
+
+ros2 topic pub -r 10 /cmd_vel geometry_msgs/msg/Twist \
+"{linear: {x: 0.20, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+
+### Useful online controller services
+
+Set body height:
+
+ros2 service call /set_body_height robot_interfaces/srv/SetBodyHeight \
+"{height: 0.31}"
+
+Update all gait parameters:
+
+ros2 service call /update_gait_params robot_interfaces/srv/UpdateGaitParams \
+"{frequency_hz: 3.0, duty_cycle: 0.6, height_swing: 0.10, phase_offset: [0.5, 0.0, 0.0, 0.5]}"
+
+Update one parameter:
+
+ros2 service call /update_single_param robot_interfaces/srv/UpdateSingleParam \
+"{param_name: 'gait_hz', value: 3.0}"
